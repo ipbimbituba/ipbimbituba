@@ -46,9 +46,9 @@ export default function Navbar() {
       setMenuOpen(false);
       return;
     }
-    setTimeout(() => {
-      setMenuOpen(false);
-    }, 300);
+    // setTimeout(() => {
+    //   setMenuOpen(false);
+    // }, 3000);
 
     router.push(href);
   };

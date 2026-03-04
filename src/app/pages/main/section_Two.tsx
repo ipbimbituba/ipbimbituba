@@ -41,7 +41,7 @@ export default function SectionTwo() {
             key={index}
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
+            
             transition={{
               duration: 0.8 + index * 0.2,
               delay: 0.6 + (index * 0.2),
