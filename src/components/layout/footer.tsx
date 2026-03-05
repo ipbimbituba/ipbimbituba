@@ -37,7 +37,7 @@ export default function FooterPage() {
   ];
 
   return (
-    <footer className="bg-gray-100 px-6 md:px-12 py-16 font-roboto border-t border-neutral-200 ">
+    <footer className="bg-gray-50 px-6 md:px-12 py-16 font-roboto border-t border-neutral-200 ">
       {/* A mágica acontece aqui: grid-cols-1 para celular, 
         sm:grid-cols-2 para tablet e md:grid-cols-4 para desktop.
       */}
@@ -69,7 +69,7 @@ export default function FooterPage() {
                   type: "spring",
                   stiffness: 80,
                   damping: 20,
-                  delay: index * 0.3,
+                  delay: index * 0.1,
                 }}
                 className="font-bold text-lg mb-5 text-igreja-teal border-b border-igreja-teal/10 pb-2"
               >
@@ -85,7 +85,7 @@ export default function FooterPage() {
                     type: "spring",
                     stiffness: 80,
                     damping: 20,
-                    delay: index * 0.1 + 0.6, // Aparece logo após o título daquela coluna
+                    delay: index * 0.1 + 0.2, // Aparece logo após o título daquela coluna
                   }}
                   className="flex flex-col gap-3"
                 >
@@ -107,7 +107,7 @@ export default function FooterPage() {
                     stiffness: 80,
                     damping: 20,
                     duration: 1,
-                    delay: 1,
+                    delay: 0.4,
                   }}
                   className="text-gray-600 text-sm leading-relaxed "
                 >
@@ -206,7 +206,7 @@ export default function FooterPage() {
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 0.6 }}
         className="max-w-4xl mx-auto mt-20 pt-10 border-t border-neutral-200 text-center"
       >
         <h4 className="text-igreja-teal font-bold uppercase tracking-widest text-xs mb-4">
@@ -225,7 +225,7 @@ export default function FooterPage() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.3 }}
+        transition={{ duration: 1, delay: 0.8 }}
         className="max-w-6xl mx-auto mt-12 pt-6 border-t border-neutral-100 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-[10px] uppercase tracking-widest"
       >
         <p>© {new Date().getFullYear()} Igreja Presbiteriana de Imbituba</p>

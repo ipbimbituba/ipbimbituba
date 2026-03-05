@@ -77,7 +77,7 @@ export default function Navbar() {
         { name: "Vídeos", href: "/media/videos" },
       ],
     },
-    { name: "Contato", href: "/contact" },
+    { name: "Contato", href: "/contacts" },
   ];
 
   return (

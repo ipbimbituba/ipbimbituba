@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function SectionOne() {
   return (
-    <section className="bg-mauve-50 py-20 md:py-32 px-5 flex justify-center text-black overflow-hidden">
+    <section className="bg-gray-50 py-20 md:py-32 px-5 flex justify-center text-black overflow-hidden">
       <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-4xl w-full gap-6">
         {/* 1. Esquerda para Direita */}
         <motion.div
@@ -31,7 +31,7 @@ export default function SectionOne() {
           </h1>
         </motion.div>
 
-        {/* 3. Baixo para Cima (Tempo 1) */}
+       
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -47,7 +47,7 @@ export default function SectionOne() {
           </p>
         </motion.div>
 
-        {/* 4. Baixo para Cima (Tempo 2 - Mais lento/atrasado) */}
+       
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
