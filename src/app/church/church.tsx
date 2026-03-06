@@ -293,7 +293,7 @@ export default function SectionChurch() {
       subtitle: "IPB Brasil",
       img: photo2,
       color: "bg-slate-800",
-      href: "/church/hystoryIPB_Imbituba",
+      href: "/church/hystoryIPB",
     },
     {
       title: "Nossa Doutrina",
@@ -478,6 +478,7 @@ export default function SectionChurch() {
         <div className="flex lg:hidden items-center justify-between mt-10 px-4 max-w-[450px] mx-auto">
           <button
             onClick={prevItem2}
+            
             className="p-4 rounded-full bg-zinc-900 text-white active:scale-95 transition-transform"
           >
             <ArrowLeft size={24} />

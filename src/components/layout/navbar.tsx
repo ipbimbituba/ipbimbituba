@@ -310,7 +310,10 @@ export default function Navbar() {
                 ) : (
                   /* ESTE É O BOTÃO QUE NÃO TEM LISTA */
                   <button
-                    onClick={() => handleNavigation(item.href)}
+                    onClick={() => {
+                      handleNavigation(item.href);
+                      setMenuOpen(false);
+                    }}
                     className={`font-extralight block w-full text-left pl-6 py-4 transition-all duration-200 outline-none
             ${
               isActive

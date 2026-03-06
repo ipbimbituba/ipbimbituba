@@ -42,9 +42,10 @@ export default function SectionVideo() {
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
           isVisible ? "opacity-70" : "opacity-0"
         }`}
-        poster="/video/video-1.jpg"
+        poster="/church-prebisteriana/video/video-1.jpg"
       >
-        <source src="/video/video-1.mp4" type="video/mp4" />
+        <source src="/church-prebisteriana/video/video-1.mp4" type="video/mp4" />
+
       </video>
 
       {/* Camada de Contraste */}
