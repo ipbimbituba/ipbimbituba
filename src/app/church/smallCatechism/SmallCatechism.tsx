@@ -5,12 +5,9 @@ import { motion } from "framer-motion";
 import logo from "@/public/image/igreja/photo_church.png";
 import {
   BookOpenText,
-  ToyBrick,
   Boxes,
-  DraftingCompass,
   Users,
   Cross,
-  HeartHandshake,
   Workflow,
   Sparkles,
   MessageCircle,
