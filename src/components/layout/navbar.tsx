@@ -2,26 +2,19 @@
 import { useState, useEffect } from "react"; // Adicionado useEffect
 import { usePathname, useRouter } from "next/navigation"; // Adicionado useRouter
 import SocialButtons from "@/src/components/ui/social_icons";
-import logoIgreja from "@/public/image/logo_igreja.png";
+import logoIgreja from "@/public/image/logo/logo_igreja.png";
 import Image from "next/image";
-import {
-  Menu,
-  ArrowLeft,
-  ChevronDown,
-  ArrowUpRight,
-  Users,
-} from "lucide-react";
+import { Menu, ArrowLeft, ChevronDown, Users } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import LoadingTelaCheia from "@/src/app/loading"; // Importe seu componente de loading
 import LoadingLogin from "@/src/components/layout/loadingLogin";
-import { Button } from "../ui/button";
 type SubmenuItem = {
   name: string;
   href: string;
 };
 
-type MenuType = "Igreja" | "Ministerio" | "Midias" | "Contato" | null;
+type MenuType = "Igreja" | "Ministerio" | "Extra" | "Contato" | null;
 type NavItem = {
   name: MenuType | "Inicio" | "Contato";
   submenu?: SubmenuItem[];
@@ -67,6 +60,10 @@ export default function Navbar() {
       setMenuOpen(false);
       return;
     }
+    if (href === "/documents/contistuiçãoIPB.pdf") {
+      window.open(href, "_blank", "noopener noreferrer");
+      return;
+    }
     // setTimeout(() => {
     //   setMenuOpen(false);
     // }, 3000);
@@ -90,12 +87,16 @@ export default function Navbar() {
     },
     { name: "Ministerio", href: "/ministries" },
     {
-      name: "Midias",
+      name: "Extra",
       submenu: [
-        { name: "Fotos", href: "/media/photos" },
-        { name: "Mensagens", href: "/media/messages" },
-        { name: "Devocionarios 2025", href: "/media/devotionals" },
-        { name: "Vídeos", href: "/media/videos" },
+        // { name: "Fotos", href: "/media/photos" },
+        { name: "Calendário", href: "/church/calendar" },
+        {
+          name: "Manual Presbiteriano",
+          href: "/documents/contistuiçãoIPB.pdf",
+        },
+        // { name: "Devocionarios", href: "/media/devotionals" },
+        // ,,,{ name: "Vídeos", href: "/media/videos" },
       ],
     },
     { name: "Contato", href: "/contacts" },

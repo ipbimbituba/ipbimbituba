@@ -3,7 +3,7 @@
 import HeroSection from "@/src/components/ui/HeroBanner";
 import photo1 from "@/public/image/hystoryIPB/IGREJA PREBISTERIANA.jpg";
 import { motion } from "framer-motion";
-import logoIPB from "@/public/image/logo_igreja.png";
+import logoIPB from "@/public/image/logo/logo_igreja.png";
 import Image from "next/image";
 
 export default function HystoryIPB() {
