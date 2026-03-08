@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 // Componente para um card individual (para organizar melhor o código)
-const InstagramCard = ({ post }) => {
+const InstagramCard = ({ post }: { post: any }) => {
   // Verificação simples para pular vídeos se a media_type não for IMAGE ou CAROUSEL_ALBUM
   if (post.media_type === "VIDEO") return null;
 
