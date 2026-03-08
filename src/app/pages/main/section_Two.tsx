@@ -1,10 +1,10 @@
 "use client";
 
 import { getFormattedDate } from "@/lib/utils";
-import photos1 from "@/public/image/event-1-390x273.jpg";
-import photos2 from "@/public/image/event-2-390x273.jpg";
+import photos1 from "@/public/image/index/sectionTwo/event-1-390x273.jpg";
+import photos2 from "@/public/image/index/sectionTwo/event-2-390x273.jpg";
 
-import photos3 from "@/public/image/event-3-390x273.jpg";
+import photos3 from "@/public/image/index/sectionTwo/event-3-390x273.jpg";
 import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";

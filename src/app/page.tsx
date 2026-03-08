@@ -5,6 +5,7 @@ import SectionOne from "./pages/main/section_One";
 import SectionThree from "./pages/main/section_Three";
 import SectionTwo from "./pages/main/section_Two";
 
+
 export default function Home() {
   return (
     <main>

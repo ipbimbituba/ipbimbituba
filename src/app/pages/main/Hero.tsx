@@ -142,7 +142,7 @@
 "use client";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import logoIgreja from "@/public/image/logo_igreja.png";
+import logoIgreja from "@/public/image/logo/logo_igreja.png";
 import ImageHome from "@/src/components/ui/ImagensHome";
 
 export default function Hero() {
