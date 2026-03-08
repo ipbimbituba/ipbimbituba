@@ -2,7 +2,7 @@
 import HeroSection from "@/src/components/ui/HeroBanner";
 import catecismoMenos from "@/public/image/small catechism/castelo.jpg";
 import { motion } from "framer-motion";
-import logo from "@/public/image/logo_igreja.png";
+import logo from "@/public/image/igreja/photo_church.png";
 import {
   BookOpenText,
   ToyBrick,
