@@ -46,7 +46,15 @@ const InstagramCard = ({ post }: { post: any }) => {
 };
 
 const InstagramSectionMinimal = () => {
-  const [posts, setPosts] = useState([]);
+  interface Post {
+  id: string;
+  media_url: string;
+  permalink: string;
+  caption: string;
+  media_type: string;
+}
+
+const [posts, setPosts] = useState<Post[]>([]);
   const token = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
 
   useEffect(() => {
@@ -59,7 +67,7 @@ const InstagramSectionMinimal = () => {
         const data = await response.json();
         // Filtra para garantir que pegamos apenas imagens/carrosséis e limita a 6
         const onlyImages =
-          data.data?.filter((p) => p.media_type !== "VIDEO").slice(0, 6) || [];
+          data.data?.filter((p: { media_type: string }) => p.media_type !== "VIDEO").slice(0, 6) || [];
         setPosts(onlyImages);
       } catch (err) {
         console.error("Erro ao carregar Instagram:", err);
