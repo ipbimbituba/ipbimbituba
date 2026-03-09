@@ -327,15 +327,28 @@ export default function Navbar() {
 
                     {openDropdown === item.name && (
                       <ul className="bg-gray-50 py-2">
-                        {item.submenu.map((subItem, subIndex) => (
-                          <li
-                            key={subIndex}
-                            onClick={() => handleNavigation(subItem.href)}
-                            className="font-extralight pl-10 py-4 text-gray-500 hover:bg-igreja-teal hover:text-white active:bg-igreja-teal active:text-white cursor-pointer transition-colors"
-                          >
-                            {subItem.name}
-                          </li>
-                        ))}
+                        {item.submenu.map((subItem, subIndex) => {
+                          // 1. Criamos a verificação de ativo para o subitem aqui dentro
+                          const isSubActive = pathname === subItem.href;
+
+                          return (
+                            <li
+                              key={subIndex}
+                              onClick={() => {
+                                handleNavigation(subItem.href);
+                                setMenuOpen(false);
+                              }}
+                              className={`font-extralight pl-10 py-4 cursor-pointer transition-colors ${
+                                // 2. Aplicamos a lógica de cores condicionais
+                                isSubActive
+                                  ? "bg-igreja-teal text-white"
+                                  : "text-gray-500 hover:bg-igreja-teal hover:text-white"
+                              }`}
+                            >
+                              {subItem.name}
+                            </li>
+                          );
+                        })}
                       </ul>
                     )}
                   </>
@@ -344,6 +357,7 @@ export default function Navbar() {
                   <button
                     onClick={() => {
                       handleNavigation(item.href);
+                      setOpenDropdown(null);
                       setMenuOpen(false);
                     }}
                     className={`font-extralight block w-full text-left pl-6 py-4 transition-all duration-200 outline-none
