@@ -1,0 +1,100 @@
+"use client";
+
+import { getFormattedDate } from "@/src/lib/utils";
+import photos1 from "@/public/image/index/sectionTwo/event-1-390x273.jpg";
+import photos2 from "@/public/image/index/sectionTwo/event-2-390x273.jpg";
+
+import photos3 from "@/public/image/index/sectionTwo/event-3-390x273.jpg";
+import { motion } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/navigation";
+
+interface NavItem {
+  title: string;
+  subtitles: string;
+  img: StaticImageData;
+  href: string;
+}
+
+export default function SectionTwo() {
+  const date = getFormattedDate();
+  const router = useRouter();
+
+  const items: NavItem[] = [
+    {
+      title: "Temer a Deus",
+      subtitles: `IPI, ${date}`,
+      img: photos1,
+      href: "/feargod",
+    },
+    {
+      title: "Congregai-vos ",
+      subtitles: `IPI, ${date}`,
+      img: photos2,
+      href: "/together",
+    },
+    {
+      title: "Base Bíblica Para Evangelização ",
+      subtitles: `IPI, ${date}`,
+      img: photos3,
+      href: "/biblicalbasis",
+    },
+  ];
+
+  const handleNavigate = (href: string) => {
+    if (!href || href === "#") return;
+    router.push(href);
+  };
+
+  return (
+    <section className="bg-mauve-50 py-20 px-4 flex justify-center overflow-hidden">
+      {/* Container com largura máxima controlada e gap generoso */}
+
+      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-12">
+        {items.map((item, index) => (
+          <motion.div
+            key={index}
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              duration: 0.8 + index * 0.2,
+              delay: 0.6 + index * 0.2,
+              ease: "easeInOut",
+            }}
+            viewport={{ once: true }}
+            className="flex flex-col group "
+          >
+            {/* 1. Imagem em proporção retangular (Landscape) */}
+            <div className="relative w-full aspect-[15/11] mb-6 overflow-hidden">
+              <Image
+                src={item.img}
+                alt={item.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110 cursor-pointer"
+              />
+            </div>
+
+            {/* 2. Subtítulo (Data e Local) - Menor e discreto */}
+            <span className="text-[0.6rem] uppercase tracking-[0.2em] text-igreja-dourado mb-1 font-medium">
+              {item.subtitles}
+            </span>
+
+            {/* 3. Título - Alinhado à esquerda, elegante */}
+            <h3 className="text-2xl  lg:text-4xl   text-igreja-teal mb-4 group-hover:text-igreja-dourado transition-colors">
+              {item.title}
+            </h3>
+
+            {/* 4. Link "Read More" igual ao da foto */}
+            <div
+              className="flex items-center text-[1rem] font-semibold  text-gray-500 group-hover:text-igreja-dourado transition-colors cursor-pointer"
+              onClick={() => handleNavigate(item.href)}
+              
+            >
+              Leia Mais <span className="ml-2">→</span>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}

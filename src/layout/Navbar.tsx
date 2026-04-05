@@ -8,7 +8,7 @@ import { Menu, ArrowLeft, ChevronDown, Users } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import LoadingTelaCheia from "@/src/app/(main)/loading"; // Importe seu componente de loading
-import LoadingLogin from "@/src/components/layout/loadingLogin";
+import LoadingLogin from "@/src/app/(main)/loadingLogin";
 type SubmenuItem = {
   name: string;
   href: string;
@@ -32,6 +32,8 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [isLoggingIn, setIsLoggingIn] = useState(false);
+
+
   const handleLogin = () => {
     setIsLoggingIn(true);
     setTimeout(() => {
@@ -191,15 +193,15 @@ export default function Navbar() {
                       <div className="relative">
                         <button
                           className={`font-extralight transition-colors cursor-pointer text-xl flex items-center gap-1 ${isActive
-                              ? "text-igreja-dourado font-normal"
-                              : "text-gray-400 hover:text-igreja-teal"
+                            ? "text-igreja-dourado font-normal"
+                            : "text-gray-400 hover:text-igreja-teal"
                             }`}
                         >
                           {item.name}
                           <ChevronDown
                             className={`w-4 h-4 transition-transform duration-300 ${hoveredMenu === item.name
-                                ? "rotate-180"
-                                : "rotate-0"
+                              ? "rotate-180"
+                              : "rotate-0"
                               }`}
                           />
                         </button>
@@ -207,8 +209,8 @@ export default function Navbar() {
                         {/* O menu agora não "some" porque o mouse ainda está dentro da LI pai */}
                         <ul
                           className={`absolute top-full left-[-25] w-64 bg-white shadow-xl rounded-md z-[110] transition-all ${hoveredMenu === item.name
-                              ? "block opacity-100"
-                              : "hidden opacity-0"
+                            ? "block opacity-100"
+                            : "hidden opacity-0"
                             }`}
                         >
                           {item.submenu.map((subItem, subIndex) => (
@@ -228,8 +230,8 @@ export default function Navbar() {
 
                               <span
                                 className={`transition-all duration-300 ${hoveredIndex === subIndex
-                                    ? "translate-x-1 text-igreja-teal"
-                                    : "translate-x-0 text-gray-400"
+                                  ? "translate-x-1 text-igreja-teal"
+                                  : "translate-x-0 text-gray-400"
                                   }`}
                               >
                                 {subItem.name}
@@ -242,8 +244,8 @@ export default function Navbar() {
                       <div
                         onClick={() => handleNavigation(item.href)}
                         className={`font-extralight cursor-pointer transition-colors text-xl ${isActive
-                            ? "text-igreja-dourado font-normal"
-                            : "text-gray-400 hover:text-igreja-teal"
+                          ? "text-igreja-dourado font-normal"
+                          : "text-gray-400 hover:text-igreja-teal"
                           }`}
                       >
                         {item.name}
@@ -270,15 +272,15 @@ export default function Navbar() {
               <Menu
                 size={32}
                 className={`absolute transition-all duration-300 transform ${menuOpen
-                    ? "opacity-0 scale-50 -rotate-90"
-                    : "opacity-100 scale-100 rotate-0"
+                  ? "opacity-0 scale-50 -rotate-90"
+                  : "opacity-100 scale-100 rotate-0"
                   }`}
               />
               <ArrowLeft
                 size={32}
                 className={`absolute transition-all duration-300 transform ${menuOpen
-                    ? "opacity-100 scale-100 rotate-0" // Volta para a esquerda (original)
-                    : "opacity-0 scale-50 rotate-180" // Começa rotacionada para a direita
+                  ? "opacity-100 scale-100 rotate-0" // Volta para a esquerda (original)
+                  : "opacity-0 scale-50 rotate-180" // Começa rotacionada para a direita
                   }`}
               />
             </button>
@@ -304,8 +306,8 @@ export default function Navbar() {
                         setOpenDropdown(openDropdown === name ? null : name);
                       }}
                       className={`font-extralight w-full text-left pl-6 py-3 transition-all duration-300 flex justify-between items-center ${openDropdown === item.name
-                          ? "bg-igreja-teal text-white shadow-inner"
-                          : "text-gray-600 hover:bg-igreja-teal/10"
+                        ? "bg-igreja-teal text-white shadow-inner"
+                        : "text-gray-600 hover:bg-igreja-teal/10"
                         }`}
                     >
                       <span>{item.name}</span>

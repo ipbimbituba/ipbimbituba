@@ -1,4 +1,4 @@
-import HystoryIPB_ImbitubaPage from  "@/src/app/church/hystoryIPB_Imbituba/hystoryIPB_Imbituba"
+import HystoryIPB_ImbitubaPage from  "@/src/app/(main)/church/hystoryIPB_Imbituba/hystoryIPB_Imbituba"
 
 
 export default function Page() {
