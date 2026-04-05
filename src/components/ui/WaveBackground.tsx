@@ -6,7 +6,7 @@ export default function WaveBackground() {
   return (
     <div className="absolute inset-0 z-0 pointer-events-none">
       <svg
-        className="absolute bottom-0 w-[200%] h-[95%] opacity-20"
+        className="absolute bottom-0 w-[400%] h-[110%] opacity-20"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
       >
@@ -15,10 +15,10 @@ export default function WaveBackground() {
           className="fill-igreja-teal"
           d="M0,160L60,170C120,180,240,200,360,192C480,184,600,148,720,138C840,128,960,148,1080,165C1200,182,1320,192,1380,197L1440,202V320H0Z"
           animate={{
-            x: ["0%", "-50%", "0%"],
+            x: ["0%", "-40%", "0%"],
           }}
           transition={{
-            duration: 15,
+            duration: 80,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -26,7 +26,7 @@ export default function WaveBackground() {
       </svg>
 
       <svg
-        className="absolute bottom-0 w-[200%] h-[80%] opacity-10"
+        className="absolute bottom-0 w-[400%] h-[105%] opacity-10"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
       >
@@ -34,10 +34,28 @@ export default function WaveBackground() {
           fill="#ffffff"
           d="M0,200L80,186C160,172,320,144,480,144C640,144,800,172,960,186C1120,200,1280,200,1360,200L1440,200V320H0Z"
           animate={{
-            x: ["0%", "-40%", "0%"],
+            x: ["0%", "-60%", "0%"],
           }}
           transition={{
-            duration: 15,
+            duration: 80,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+        />
+      </svg>
+      <svg
+        className="absolute bottom-0 w-[400%] h-[100%] opacity-10"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <motion.path
+          fill="#ffffff"
+          d="M0,200L80,186C160,172,320,144,480,144C640,144,800,172,960,186C1120,200,1280,200,1360,200L1440,200V320H0Z"
+          animate={{
+            x: ["0%", "-50%", "0%"],
+          }}
+          transition={{
+            duration: 80,
             repeat: Infinity,
             ease: "linear",
           }}

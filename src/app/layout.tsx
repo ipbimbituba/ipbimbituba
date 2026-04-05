@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Montserrat,Ibarra_Real_Nova, Roboto } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Montserrat, Ibarra_Real_Nova, Roboto } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/layout/navbar";
-import FooterPage from "../components/layout/footer";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -47,11 +46,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={` ${ibarra.className} antialiased relative`}>
-    
-        <Navbar />
+      <body className={` ${ibarra.className} antialiased relative`} suppressHydrationWarning>
+
+
         {children}
-        <FooterPage />
+
       </body>
     </html>
   );

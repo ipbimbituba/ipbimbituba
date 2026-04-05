@@ -1,4 +1,4 @@
-import SectionMinisterios from  "@/src/app/ministries/Ministries"
+import SectionMinisterios from  "@/src/app/(main)/ministries/Ministries"
 export default function SectionChurch() {
   return (
     <main>
