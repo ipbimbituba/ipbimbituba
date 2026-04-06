@@ -96,7 +96,7 @@ export default function Login() {
           <div className="flex flex-col gap-6 pt-10">
             <button
               type="submit"
-              className="w-full bg-igreja-teal text-white py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-igreja-teal-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-3 active:scale-95 active:translate-y-0"
+              className="cursor-pointer w-full bg-igreja-teal text-white py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-igreja-teal-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-3 active:scale-95 active:translate-y-0"
             >
               Acessar Painel Restrito
               <ArrowRight size={16} />
@@ -105,7 +105,7 @@ export default function Login() {
             <button
               type="button"
               onClick={() => router.push("/")}
-              className="group flex items-center justify-center gap-2 text-white/40 hover:text-white transition-all text-[10px] uppercase tracking-[0.3em] font-bold"
+              className="cursor-pointer group flex items-center justify-center gap-2 text-white/40 hover:text-white transition-all text-[10px] uppercase tracking-[0.3em] font-bold"
             >
               <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
               Voltar ao Início do Site
