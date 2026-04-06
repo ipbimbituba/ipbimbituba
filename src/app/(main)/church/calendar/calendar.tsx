@@ -104,7 +104,7 @@ export default function ContentCalendar() {
     disabled:opacity-30 
     p-2
     rounded-full 
-    hover:bg-igreja-dourado/5 disabled:opacity-30 hidden md:block "
+    hover:bg-igreja-dourado/5 disabled:opacity-30 hidden md:block mr-4"
               >
                 <ChevronLeft size={20} className="cursor-pointer" />
               </button>
@@ -138,7 +138,7 @@ export default function ContentCalendar() {
     disabled:opacity-30 
     p-2
     rounded-full 
-    hover:bg-igreja-dourado/5 disabled:opacity-30 hidden md:block"
+    hover:bg-igreja-dourado/5 disabled:opacity-30 hidden md:block ml-4"
             >
               <ChevronRight size={20} className="cursor-pointer" />
              
