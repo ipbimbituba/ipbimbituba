@@ -46,6 +46,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
+      <head>
+        {/* Importação dos Material Symbols */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+      </head>
       <body className={` ${ibarra.className} antialiased relative`} suppressHydrationWarning>
 
 
