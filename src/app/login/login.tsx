@@ -93,7 +93,7 @@ export default function Login() {
           </div>
 
           {/* 3. AÇÕES */}
-          <div className="flex flex-col gap-6 pt-10">
+          <div className="flex flex-col gap-6 pt-10 xl:pt-4">
             <button
               type="submit"
               className="cursor-pointer w-full bg-igreja-teal text-white py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-igreja-teal-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-3 active:scale-95 active:translate-y-0"
