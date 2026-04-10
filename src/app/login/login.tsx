@@ -16,7 +16,7 @@ export default function Login() {
   };
 
   return (
-    <main className="relative min-h-screen w-full flex flex-col items-center justify-center bg-[#052c2c] px-6 overflow-hidden selection:bg-igreja-dourado/20">
+    <main className="relative min-h-screen w-full  flex flex-col items-center justify-center bg-[#052c2c] px-6 overflow-hidden selection:bg-igreja-dourado/20">
       
       {/* Background absoluto e fixo cobrindo tudo */}
       <div className="absolute inset-0 z-0">
@@ -27,14 +27,14 @@ export default function Login() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative z-10 w-full max-w-md py-12"
+        className="relative z-10 w-full max-w-md py-12 max-w-sm xl"
       >
         {/* 1. TÍTULO */}
         <div className="text-center mb-16">
-          <span className="text-igreja-dourado font-bold uppercase tracking-[0.4em] text-[10px] mb-3 block">
+          <span className="text-igreja-dourado font-bold uppercase tracking-[0.4em] text-[10px] xl:text-[10px] mb-3 block">
             Área Restrita
           </span>
-          <h2 className="text-5xl md:text-6xl font-serif text-white tracking-tighter italic">
+          <h2 className="text-5xl md:text-6xl xl:text-5xl font-serif text-white tracking-tighter italic">
             Portal do{" "}
             <span className="text-white not-italic font-black block md:inline underline decoration-igreja-dourado decoration-4 underline-offset-8">
               Membro
@@ -43,7 +43,7 @@ export default function Login() {
         </div>
 
         {/* 2. FORMULÁRIO COM INPUTS EM ESTILO 'BOX' (Estilo Forven) */}
-        <form onSubmit={handleLogin} className="space-y-8">
+        <form onSubmit={handleLogin} className="space-y-8 ">
           
           {/* Campo E-mail em Caixa */}
           <div className="space-y-2">
@@ -57,7 +57,7 @@ export default function Login() {
                     required
                     placeholder="seu.nome@ipb.org.br"
                     // bg-transparent para usar o fundo da div pai. text-lg e py-5 para conforto.
-                    className="w-full bg-transparent py-5 pl-14 pr-4 text-white placeholder:text-white/20 outline-none text-lg font-light"
+                    className="w-full bg-transparent py-5 xl:py-4 pl-14 pr-4 text-white placeholder:text-white/20 outline-none text-lg font-light"
                 />
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Login() {
                     type={showPassword ? "text" : "password"}
                     required
                     placeholder="••••••••"
-                    className="w-full bg-transparent py-5 pl-14 pr-14 text-white placeholder:text-white/20 outline-none text-lg font-light"
+                    className="w-full bg-transparent py-5 xl:py-4 pl-14 pr-14 text-white placeholder:text-white/20 outline-none text-lg font-light"
                 />
                 <button
                     type="button"
