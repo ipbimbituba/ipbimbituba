@@ -305,25 +305,25 @@ export default function SectionChurch() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
-              className="relative aspect-square w-full max-w-md mx-auto"
+              className="relative aspect-square w-full xl:w-1/2 max-w-2xl mx-auto"
             >
               <Image
                 src={council[index].photo}
                 alt={council[index].name}
                 fill
-                className="object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700 shadow-xl"
+                className="object-cover  rounded-xl grayscale hover:grayscale-0 transition-all duration-700 shadow-xl"
               />
             </motion.div>
           </AnimatePresence>
 
           <div className="flex flex-col justify-center">
-            <span className="text-igreja-teal font-mono text-sm tracking-widest uppercase mb-4 block">
+            <span className="text-igreja-teal text-xs xl:text-xs 2xl:text-sm font-mono text-sm tracking-widest uppercase mb-4 block">
               {council[index].role}
             </span>
-            <h3 className="text-4xl md:text-6xl font-bold text-slate-900 leading-none mb-6 uppercase tracking-tighter">
+            <h3 className="text-4xl xl:text-4xl 2xl:text-5xl font-bold text-slate-900 leading-none mb-6 uppercase tracking-tighter">
               {council[index].name}
             </h3>
-            <p className="text-slate-500 text-xl leading-relaxed italic border-l-4 border-igreja-teal/20 pl-6 mb-8">
+            <p className="text-slate-500 text-sm xl:text-lg 2xl:text-xl leading-relaxed italic border-l-4 border-igreja-teal/20 pl-6 mb-8">
               "{council[index].bio}"
             </p>
 
@@ -334,13 +334,13 @@ export default function SectionChurch() {
                     (prev) => (prev - 1 + council.length) % council.length
                   )
                 }
-                className="p-4 rounded-full bg-slate-900 text-white hover:bg-igreja-teal transition-colors"
+                className="p-4 xl:p-3 2xl:p-4 rounded-full bg-slate-900 text-white hover:bg-igreja-teal transition-colors"
               >
                 <ArrowLeft size={24} />
               </button>
               <button
                 onClick={() => setIndex((prev) => (prev + 1) % council.length)}
-                className="p-4 rounded-full bg-slate-900 text-white hover:bg-igreja-teal transition-colors"
+                className="p-4 xl:p-3 2xl:p-4 rounded-full bg-slate-900 text-white hover:bg-igreja-teal transition-colors"
               >
                 <ArrowRight size={24} />
               </button>

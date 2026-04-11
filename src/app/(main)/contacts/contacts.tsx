@@ -57,13 +57,13 @@ export default function PageContacts() {
     
     <div className="flex flex-col  lg:flex-row items-center lg:items-start justify-center bg-gray-50 py-16 px-6 md:py-32 lg:py-40 gap-16 lg:gap-24">
      
-      <div className="flex mt-10 mb-20 flex-col items-center md:items-start text-center md:text-left w-full max-w-2xl gap-6">
+      <div className="flex mt-10 mb-20 flex-col items-center md:items-start text-center md:text-left w-full xl:max-w-xl 2xl:max-w-2xl gap-6">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-igreja-dourado font-bold uppercase tracking-widest text-sm md:text-base">
+          <h2 className="text-igreja-dourado  font-bold uppercase tracking-widest text-sm xl:text-sm 2xl:text-base">
             Venha nos visitar
           </h2>
         </motion.div>
@@ -73,7 +73,7 @@ export default function PageContacts() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-igreja-teal leading-tight">
+          <h1 className="text-3xl xl:text-4xl 2xl:text-5xl font-black text-igreja-teal leading-tight">
             Nossa Missão
           </h1>
         </motion.div>
@@ -84,7 +84,7 @@ export default function PageContacts() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
           {/* Ajuste: text-lg no mobile e text-2xl no desk para não ficar exagerado */}
-          <p className="text-gray-600 leading-relaxed text-lg lg:text-2xl text-justify md:text-left">
+          <p className="text-gray-600 leading-relaxed text-lg xl:text-xl 2xl:text-2xl text-justify md:text-left">
             Convidamos você a vir exatamente como você é e a fazer parte da
             nossa comunidade de pessoas que se esforçam juntas para descobrir o
             propósito e o plano de Deus para suas vidas.
@@ -109,7 +109,7 @@ export default function PageContacts() {
                 size={18}
                 className="text-gray-600 group-hover:text-igreja-dourado transition-colors md:w-5 md:h-5 shrink-0"
               />
-              <p className="text-sm md:text-lg group-hover:text-igreja-dourado leading-tight">
+              <p className="text-sm xl:text-lg 2xl:text-xl group-hover:text-igreja-dourado leading-tight">
                 Av. Vinte Um de Junho, s/n - Centro, Imbituba - SC.
               </p>
             </a>
@@ -127,7 +127,7 @@ export default function PageContacts() {
                 size={18}
                 className="text-gray-600 group-hover:text-igreja-dourado md:w-5 md:h-5 shrink-0"
               />
-              <p className="text-lg md:text-2xl group-hover:text-igreja-dourado font-bold text-green-900">
+              <p className="text-lg xl:text-lg 2xl:text-xl group-hover:text-igreja-dourado font-bold text-green-900">
                 (48) 99868-0229
               </p>
             </a>
@@ -143,7 +143,7 @@ export default function PageContacts() {
                 size={18}
                 className="text-gray-600 md:w-5 md:h-5 transition-colors shrink-0"
               />
-              <p className="text-sm md:text-lg leading-tight">
+              <p className="text-sm xl:text-lg 2xl:text-xl leading-tight">
                 <span className="text-igreja-dourado-dark font-bold hover:text-igreja-teal break-all">
                   ipbimbituba@gmail.com
                 </span>
@@ -172,7 +172,7 @@ export default function PageContacts() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-igreja-dourado font-bold uppercase tracking-widest text-sm md:text-base">
+            <h2 className="text-igreja-dourado font-bold uppercase tracking-widest text-sm xl:text-sm 2xl:text-base">
               ENTRE EM CONTATO
             </h2>
           </motion.div>
@@ -182,7 +182,7 @@ export default function PageContacts() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-igreja-teal leading-tight">
+            <h1 className="text-3xl xl:text-4xl 2xl:text-5xl font-black text-igreja-teal leading-tight">
               Nós queremos ouvir você
             </h1>
           </motion.div>
@@ -192,7 +192,7 @@ export default function PageContacts() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            <p className="text-gray-600 leading-relaxed text-lg lg:text-2xl text-justify md:text-left">
+            <p className="text-gray-600 leading-relaxed text-lg xl:text-xl 2xl:text-2xl text-justify md:text-left">
               Se você tiver alguma pergunta, solicitação ou história para
               compartilhar conosco, adoraríamos ouvir você.
             </p>

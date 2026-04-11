@@ -241,10 +241,10 @@ export default function HystoryIPB_Imbituba() {
         {/* 2. CONTEXTO INICIAL */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-16 mb-48">
           <div className="md:col-span-8">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight text-white italic">
+            <h2 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-8 leading-tight text-white italic">
               A boa mão do Senhor sobre a nossa cidade.
             </h2>
-            <div className="space-y-6 text-xl text-neutral-300 leading-relaxed text-justify font-light">
+            <div className="space-y-6 text-xl xl:text-lg 2xl:text-3xl text-neutral-300 leading-relaxed text-justify font-light">
               <p>
                 O Rev. Emerson Baran Santos chegou em Imbituba em dezembro de
                 2016. Com uma população de 45 mil habitantes na época, o desafio
@@ -305,7 +305,7 @@ export default function HystoryIPB_Imbituba() {
               <p className="text-2xl font-bold text-white italic leading-tight">
                 Dia 30 de maio de 2020
               </p>
-              <p className="leading-relaxed text-justify">
+              <p className=" leading-relaxed text-justify">
                 Em 30 de maio de 2020, a IPB/JMN adquiriu um terreno de 1.800
                 m². Após três anos de atrasos causados por erros de demarcação e
                 questões de servidão fluvial junto à Prefeitura, a escrituração
@@ -449,7 +449,7 @@ export default function HystoryIPB_Imbituba() {
               03 DE DEZEMBRO <br /> DE 2023
             </h2>
             <div className="h-1 w-20 bg-[#215D63] mx-auto" />
-            <p className="text-xl text-neutral-400 leading-relaxed font-light italic">
+            <p className="text-xl xl:text-lg 2xl:text-xl text-neutral-400 leading-relaxed font-light italic">
               Nossa profunda gratidão à JMN, aos Presbitérios de Florianópolis e
               Litorâneo Sul Catarinense, ao Projeto Mão na Massa e a todos os
               intercessores e irmãos que cooperaram desde 2017. Acima de tudo,
