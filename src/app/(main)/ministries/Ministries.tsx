@@ -41,7 +41,7 @@ export default function MinistriesPage() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.4 }}
-            className="text-[#bf9b30] font-mono tracking-[0.3em] uppercase text-xs md:text-sm mb-4 block"
+            className="text-[#bf9b30] font-mono tracking-[0.3em] uppercase text-xs xl:text-xs 2xl:text-sm  mb-4 block"
           >
             Igreja Presbiteriana de Imbituba
           </motion.span>
@@ -50,7 +50,7 @@ export default function MinistriesPage() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.6 }}
-            className="text-6xl md:text-[10rem] font-extrabold text-white leading-[0.9] tracking-tighter uppercase"
+            className="text-6xl xl:text-[7rem] 2xl:text-[10rem] font-extrabold text-white leading-[0.9] tracking-tighter uppercase"
           >
             NOSSO
             <p

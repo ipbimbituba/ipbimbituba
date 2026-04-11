@@ -17,7 +17,7 @@ export default function SectionOne() {
         
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-igreja-dourado font-bold uppercase tracking-widest text-base md:text-lg">
+          <h2 className="text-igreja-dourado xl:text-sm 2xl:text-lg font-bold uppercase tracking-widest text-base md:text-lg">
             Bem-vindo à Igreja Presbiteriana de Imbituba
           </h2>
         </motion.div>
@@ -42,7 +42,7 @@ export default function SectionOne() {
           viewport={{ once: true }}      
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
-          <p className="text-gray-600 leading-relaxed text-lg md:text-2xl max-w-4xl text-justify">
+          <p className="text-gray-600 leading-relaxed text-lg xl:text-lg md:text-xl max-w-4xl text-justify">
             Existimos para ajudar as pessoas a encontrarem o caminho de volta
             para Deus através do evangelho genuíno. Alcançamos aqueles que estão
             distantes, restauramos o sonho de Deus para o mundo e reproduzimos
@@ -62,7 +62,7 @@ export default function SectionOne() {
           <div className="pt-4 flex justify-center md:justify-start">
             <Button
               asChild
-              className="bg-igreja-dourado hover:bg-igreja-dourado-dark rounded-none text-white w-full md:w-60 h-16 md:h-18 text-lg cursor-pointer transition-all"
+              className="bg-igreja-dourado hover:bg-igreja-dourado-dark rounded-none text-white w-full md:w-60 h-16 md:h-18 xl:h-15 text-lg  cursor-pointer transition-all"
             >
               <a
                 href="/church/hystoryIPB_Imbituba"

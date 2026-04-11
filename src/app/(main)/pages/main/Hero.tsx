@@ -183,7 +183,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="text-white text-6xl md:text-[120px] font-serif leading-none tracking-tighter"
+          className="text-white  text-7xl xl:text-[5rem] 2xl:text-[8rem] font-serif leading-none tracking-tighter"
         >
           Fé que <br />
           <span className="italic text-transparent bg-clip-text bg-gradient-to-b from-igreja-dourado to-igreja-dourado/40">
@@ -202,7 +202,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="text-white/60 text-lg md:text-xl font-light max-w-2xl leading-relaxed italic"
+          className="text-white/60 text-lg md:text-xl xl:text-[1rem] 2xl:text-[1.5rem] font-light max-w-2xl leading-relaxed italic"
         >
           "Porque d'Ele, por meio d'Ele, e para Ele são todas as coisas."
         </motion.p>
