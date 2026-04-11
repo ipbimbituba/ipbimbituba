@@ -43,7 +43,7 @@ export default function Login() {
         </div>
 
         {/* 2. FORMULÁRIO COM INPUTS EM ESTILO 'BOX' (Estilo Forven) */}
-        <form onSubmit={handleLogin} className="space-y-8 ">
+        <form onSubmit={handleLogin} className="space-y-5 md:space-y-8 ">
           
           {/* Campo E-mail em Caixa */}
           <div className="space-y-2">
@@ -57,7 +57,7 @@ export default function Login() {
                     required
                     placeholder="seu.nome@ipb.org.br"
                     // bg-transparent para usar o fundo da div pai. text-lg e py-5 para conforto.
-                    className="w-full bg-transparent py-5 xl:py-4 pl-14 pr-4 text-white placeholder:text-white/20 outline-none text-lg font-light"
+                    className="w-full bg-transparent py-4 xl:py-4 pl-14 pr-4 text-white placeholder:text-white/20 outline-none text-lg font-light"
                 />
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Login() {
                     type={showPassword ? "text" : "password"}
                     required
                     placeholder="••••••••"
-                    className="w-full bg-transparent py-5 xl:py-4 pl-14 pr-14 text-white placeholder:text-white/20 outline-none text-lg font-light"
+                    className="w-full bg-transparent py-4 xl:py-4 pl-14 pr-14 text-white placeholder:text-white/20 outline-none text-lg font-light"
                 />
                 <button
                     type="button"

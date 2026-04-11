@@ -80,7 +80,7 @@ export default function SmallCatechism() {
         </header>
 
         {/* PARTE 1: FUNDAMENTOS (1-11) */}
-        <section className="mb-40">
+        <section className="mb-20 md:mb-40">
           <motion.div
             className="bg-white text-[#1a1d24] p-12 md:p-24 rounded-sm relative overflow-hidden mb-24 shadow-2xl"
             initial="hidden"
@@ -150,7 +150,7 @@ export default function SmallCatechism() {
                   <h3 className="text-2xl font-black text-white mt-3 mb-6 tracking-tight uppercase group-hover:text-[#c94b30] transition-colors">
                     {item.q}
                   </h3>
-                  <p className="text-lg leading-relaxed text-zinc-300 text-justify mb-6">
+                  <p className="text-lg leading-relaxed text-zinc-300 md:text-justify mb-6">
                     {item.r}
                   </p>
                   <p className="text-zinc-600 font-mono text-xs italic tracking-tight">
@@ -173,7 +173,7 @@ export default function SmallCatechism() {
                 <h3 className="text-sm font-sans font-black uppercase text-zinc-300 mb-6 tracking-widest">
                   4. Definição: O que é Deus?
                 </h3>
-                <p className="text-[#eeeff2] font-serif italic text-2xl leading-relaxed mb-6 text-justify">
+                <p className="text-[#eeeff2] font-serif italic text-2xl leading-relaxed mb-6 md:text-justify">
                   Deus é espírito, infinito, eterno e imutável em seu ser,
                   sabedoria, poder, santidade, justiça, bondade e verdade.
                 </p>
@@ -189,7 +189,7 @@ export default function SmallCatechism() {
 
         {/* PARTE 2: DECRETOS (7-11) */}
         <motion.section
-          className="mb-40"
+          className="mb-20 md:mb-40"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -247,7 +247,7 @@ export default function SmallCatechism() {
                   <h3 className="text-sm font-sans font-bold text-[#c94b30] uppercase mb-4 tracking-widest">
                     {i.n}. {i.q}
                   </h3>
-                  <p className="text-base text-zinc-300 text-justify mb-6 leading-relaxed">
+                  <p className="text-base text-zinc-300 md:text-justify mb-6 leading-relaxed">
                     {i.r}
                   </p>
                 </div>
@@ -277,7 +277,7 @@ export default function SmallCatechism() {
                 Miséria do pecado
               </p>
             </div>
-            <div className="md:col-span-7 space-y-10 text-lg text-zinc-300 leading-relaxed text-justify">
+            <div className="md:col-span-7 space-y-10 text-lg text-zinc-300 leading-relaxed md:text-justify">
               <p>
                 <strong>12. Pacto de Vida:</strong> Quando Deus criou o homem,
                 fez com ele um pacto de vida, com a condição de perfeita
@@ -291,10 +291,10 @@ export default function SmallCatechism() {
 
               <div className="p-10 bg-white text-[#1a1d24] rounded-sm shadow-2xl relative">
                 <Boxes className="absolute -left-6 -top-6 text-[#c94b30] w-12 h-12" />
-                <h3 className="text-3xl font-serif italic mb-6">
+                <h3 className="text-4xl md:text-4xl font-serif italic mb-6">
                   14. Que é pecado?
                 </h3>
-                <p className="text-4xl font-black text-[#1a1d24] uppercase tracking-tight">
+                <p className="text-2xl md:text-4xl font-black text-[#1a1d24] uppercase tracking-tight">
                   "Qualquer falta de conformidade com a lei de Deus, ou
                   transgressão dessa lei."
                 </p>
@@ -315,7 +315,7 @@ export default function SmallCatechism() {
         </motion.section>
 
         {/* PARTE 4: REDENTOR (20-28) */}
-        <section className="mb-40 grid grid-cols-1 lg:grid-cols-12 gap-16">
+        <section className="mb-20 md:mb-40 grid grid-cols-1 lg:grid-cols-12 gap-16">
           <motion.div
             className="lg:col-span-8 space-y-12"
             initial="hidden"
@@ -324,7 +324,7 @@ export default function SmallCatechism() {
             transition={{ duration: 0.8 }}
             variants={fadeInRight}
           >
-            <h2 className="text-5xl font-black uppercase text-white tracking-tighter leading-none mb-12 text-right">
+            <h2 className="text-5xl font-black uppercase text-white tracking-tighter leading-none mb-12 md:text-right">
               O Redentor
             </h2>
             {[
@@ -351,7 +351,7 @@ export default function SmallCatechism() {
             ].map((item) => (
               <div
                 key={item.n}
-                className="space-y-3 border-r-2 border-zinc-800 pr-8 pb-4 text-right"
+                className="space-y-3 border-r-2 border-zinc-800 pr-8 pb-4 md:text-right"
               >
                 <h4 className="text-[#c94b30] font-black uppercase text-[10px] tracking-widest">
                   {item.n}. {item.q}
@@ -386,7 +386,7 @@ export default function SmallCatechism() {
 
         {/* PARTE 5: APLICAÇÃO (29-38) */}
         <motion.section
-          className="mb-40"
+          className="mb-20 md:mb-40"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -427,7 +427,7 @@ export default function SmallCatechism() {
 
         {/* PARTE 6: LEI MORAL (39-81) */}
         <motion.section
-          className="mb-40"
+          className="mb-20 md:mb-40"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -436,7 +436,7 @@ export default function SmallCatechism() {
         >
           <div className="text-center mb-24">
             <Scale size={40} className="text-[#c94b30] mx-auto mb-4" />
-            <h2 className="text-5xl font-black uppercase text-white">
+            <h2 className="text-3xl md:text-5xl font-black uppercase text-white">
               Os Mandamentos
             </h2>
           </div>
@@ -505,7 +505,7 @@ export default function SmallCatechism() {
                 <h4 className="font-bold text-white uppercase text-xs">
                   #{m.n} {m.q}
                 </h4>
-                <p className="text-sm text-zinc-400 text-justify">{m.r}</p>
+                <p className="text-sm text-zinc-400 md:text-justify">{m.r}</p>
               </div>
             ))}
           </div>
@@ -513,7 +513,7 @@ export default function SmallCatechism() {
 
         {/* PARTE 7: ORAÇÃO (98-107) */}
         <motion.section
-          className="mb-40"
+          className="mb-20 md:mb-40"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

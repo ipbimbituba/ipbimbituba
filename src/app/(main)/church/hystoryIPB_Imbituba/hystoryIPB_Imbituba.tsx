@@ -366,7 +366,7 @@ export default function HystoryIPB_Imbituba() {
         <section className="mb-48 flex flex-col md:flex-row gap-x-28 gap-y-12 items-center px-6 md:px-16">
           {/* Texto ocupa 45% */}
           <div className="w-full md:w-[45%] order-2 md:order-1 flex flex-col justify-center">
-            <h2 className="text-5xl md:text-7xl font-black uppercase text-white leading-none mb-8 tracking-tighter">
+            <h2 className="text-4xl md:text-7xl font-black uppercase text-white leading-none mb-8 tracking-tighter">
               {/* Corrigido: INAUGURAÇÃO */}
               <span className="text-[#215D63] bg-white px-3 italic">
                 INAUGURAÇÃO
@@ -379,7 +379,7 @@ export default function HystoryIPB_Imbituba() {
                 <p className="text-2xl font-bold text-white italic leading-tight">
                   02 de Dezembro de 2023
                 </p>
-                <p className="leading-relaxed text-justify">
+                <p className="text-sm xl:text-lg 2xl:text-xl leading-relaxed text-justify">
                   Com a igreja repleta de visitantes louvando ao Senhor,
                   celebramos a inauguração do nosso templo. O Coral da I.P.
                   Camboriú conduziu a igreja em momentos profundos de louvor e
@@ -389,7 +389,7 @@ export default function HystoryIPB_Imbituba() {
 
               {/* 2. PRESENÇAS ILUSTRES (Transformado em destaque menor para não poluir) */}
               <div className="bg-[#123336] p-4 border-l-2 border-[#215D63] text-sm italic">
-                <p className="text-white font-bold mb-1 underline">
+                <p className="text-white text-sm xl:text-lg 2xl:text-xl font-bold mb-1 underline">
                   Presenças marcantes:
                 </p>
                 <p>
@@ -401,7 +401,7 @@ export default function HystoryIPB_Imbituba() {
 
               {/* 3. O MARCO HISTÓRICO (Destaque final da transição) */}
               <div className="pt-4">
-                <p className="leading-relaxed text-justify">
+                <p className="text-sm xl:text-lg 2xl:text-xl leading-relaxed text-justify">
                   O dia seguinte,{" "}
                   <span className="text-white font-bold">03/12/2023</span>,
                   marcou o auge de nossa jornada. Por decisão do PLSC, deixamos
@@ -449,7 +449,7 @@ export default function HystoryIPB_Imbituba() {
               03 DE DEZEMBRO <br /> DE 2023
             </h2>
             <div className="h-1 w-20 bg-[#215D63] mx-auto" />
-            <p className="text-xl xl:text-lg 2xl:text-xl text-neutral-400 leading-relaxed font-light italic">
+            <p className="text-sm xl:text-lg 2xl:text-xl text-neutral-400 leading-relaxed font-light italic">
               Nossa profunda gratidão à JMN, aos Presbitérios de Florianópolis e
               Litorâneo Sul Catarinense, ao Projeto Mão na Massa e a todos os
               intercessores e irmãos que cooperaram desde 2017. Acima de tudo,

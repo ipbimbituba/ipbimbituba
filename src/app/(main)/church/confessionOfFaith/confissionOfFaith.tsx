@@ -57,7 +57,7 @@ export default function ConfissionOfFaith() {
                 Edição Especial: Símbolos de Fé
               </span>
             </motion.p>
-            
+
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -91,9 +91,9 @@ export default function ConfissionOfFaith() {
 
         {/* LAYOUT DE REVISTA - 2 COLUNAS DE TEXTO */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-          
+
           {/* COLUNA DA ESQUERDA (INTRODUÇÃO) - Vem da ESQUERDA */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-8 space-y-8 text-lg leading-relaxed text-zinc-800"
             initial="hidden"
             whileInView="visible"
@@ -109,7 +109,7 @@ export default function ConfissionOfFaith() {
               O que é uma confissão de fé?
             </h3>
 
-            <p className="text-justify first-letter:text-9xl first-letter:font-black first-letter:text-igreja-teal first-letter:mr-4 first-letter:float-left first-letter:leading-[0.7] first-letter:mt-2">
+            <p className="md:text-justify first-letter:text-9xl first-letter:font-black first-letter:text-igreja-teal first-letter:mr-4 first-letter:float-left first-letter:leading-[0.7] first-letter:mt-2">
               Em resumo, uma confissão de fé é uma declaração sistematizada das
               doutrinas fundamentais da Bíblia. Sendo assim, ela não substitui
               as Escrituras, mas tem um propósito de servir como um guia para a
@@ -120,7 +120,7 @@ export default function ConfissionOfFaith() {
               subjetivas da fé cristã.
             </p>
 
-            <p className="text-justify">
+            <p className="md:text-justify">
               A importância das confissões de fé se torna evidente quando
               olhamos para a história da igreja. Ao longo dos séculos, muitos
               grupos cristãos se desviaram da sã doutrina devido à falta de
@@ -137,13 +137,13 @@ export default function ConfissionOfFaith() {
               </p>
             </div>
 
-            <p className="text-justify">
+            <p className="md:text-justify">
               Mas afinal, o que é uma confissão de fé? Qual a sua importância
               para a vida cristã? E por que igrejas reformadas, especialmente as
               Presbiterianas, adotam uma confissão como padrão doutrinário?
             </p>
 
-            <p className="text-justify">
+            <p className="md:text-justify">
               A Confissão de Fé de Westminster, elaborada no século XVII, é uma
               das mais importantes declarações doutrinárias da tradição
               reformada. Ela sintetiza a teologia calvinista e estabelece um
@@ -153,7 +153,7 @@ export default function ConfissionOfFaith() {
               os motivos que levaram à sua formulação.
             </p>
 
-            <p className="text-justify bg-igreja-teal/5 p-6 border-l-2 border-igreja-teal font-medium italic">
+            <p className="md:text-justify bg-igreja-teal/5 p-6 border-l-2 border-igreja-teal font-medium italic">
               Nos próximos tópicos, exploraremos o cenário político e religioso
               da época, os objetivos dos teólogos que elaboraram a Confissão e
               por que, até hoje, ela continua sendo um documento essencial para
@@ -162,7 +162,7 @@ export default function ConfissionOfFaith() {
           </motion.div>
 
           {/* COLUNA DA DIREITA (ASIDE/HISTÓRIA) - Vem da DIREITA */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-4 space-y-12"
             initial="hidden"
             whileInView="visible"
@@ -176,7 +176,7 @@ export default function ConfissionOfFaith() {
                 <h2 className="text-2xl font-bold mb-6 font-sans uppercase tracking-tighter">
                   2. Breve Histórico
                 </h2>
-                <div className="space-y-6 text-sm text-zinc-500 text-justify leading-relaxed">
+                <div className="space-y-6 text-sm text-zinc-500 md:text-justify leading-relaxed">
                   <p>
                     A Confissão de Fé de Westminster foi escrita entre 1643 e
                     1648, durante a Assembleia de Westminster, realizada na
@@ -196,7 +196,7 @@ export default function ConfissionOfFaith() {
         </div>
 
         {/* CONTINUAÇÃO COM ANIMAÇÕES DE BAIXO PARA CIMA */}
-        <motion.div 
+        <motion.div
           className="mt-24 grid grid-cols-1 lg:grid-cols-12 gap-16"
           initial="hidden"
           whileInView="visible"
@@ -208,7 +208,7 @@ export default function ConfissionOfFaith() {
             <h3 className="text-3xl font-serif italic border-b border-zinc-200 pb-4">
               2.1. O Contexto Político e Religioso
             </h3>
-            <div className="columns-1 md:columns-2 gap-12 text-zinc-700 leading-relaxed text-justify text-lg space-y-6">
+            <div className="columns-1 md:columns-2 gap-12 text-zinc-700 leading-relaxed md:text-justify text-lg space-y-6">
               <p>
                 No século XVII, a Inglaterra estava em meio a uma crise
                 profunda. O rei Carlos I defendia uma igreja anglicana com forte
@@ -232,31 +232,31 @@ export default function ConfissionOfFaith() {
 
         {/* 2.2 - Vem da ESQUERDA */}
         <motion.div
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true }}
-           transition={{ duration: 0.8 }}
-           variants={fadeInLeft}
-           className="mt-20"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          variants={fadeInLeft}
+          className="mt-20"
         >
-            <h3 className="text-3xl font-serif italic border-b border-zinc-200 pb-4 pt-10">
-              2.2. A Assembleia de Westminster
-            </h3>
-            <p className="text-lg leading-relaxed text-zinc-700 text-justify mt-6">
-              A Assembleia de Westminster foi composta por cerca de 120
-              teólogos, além de parlamentares e representantes da Igreja da
-              Escócia. A maioria dos participantes era de orientação puritana e
-              calvinista, com forte influência da tradição reformada. Os
-              trabalhos da Assembleia duraram cinco anos, resultando na
-              Confissão de Fé de Westminster, no Catecismo Maior e no Breve
-              Catecismo. Esses documentos foram adotados oficialmente pela
-              Igreja da Escócia e influenciaram profundamente igrejas reformadas
-              ao redor do mundo, incluindo o presbiterianismo.
-            </p>
+          <h3 className="text-3xl font-serif italic border-b border-zinc-200 pb-4 pt-10">
+            2.2. A Assembleia de Westminster
+          </h3>
+          <p className="text-lg leading-relaxed text-zinc-700 md:text-justify mt-6">
+            A Assembleia de Westminster foi composta por cerca de 120
+            teólogos, além de parlamentares e representantes da Igreja da
+            Escócia. A maioria dos participantes era de orientação puritana e
+            calvinista, com forte influência da tradição reformada. Os
+            trabalhos da Assembleia duraram cinco anos, resultando na
+            Confissão de Fé de Westminster, no Catecismo Maior e no Breve
+            Catecismo. Esses documentos foram adotados oficialmente pela
+            Igreja da Escócia e influenciaram profundamente igrejas reformadas
+            ao redor do mundo, incluindo o presbiterianismo.
+          </p>
         </motion.div>
 
         {/* PROPÓSITO - Vem de BAIXO */}
-        <motion.div 
+        <motion.div
           className="bg-zinc-900 text-white p-12 md:p-20 my-20 rounded-sm relative"
           initial="hidden"
           whileInView="visible"
@@ -298,31 +298,31 @@ export default function ConfissionOfFaith() {
 
         {/* 2.4 - Vem da DIREITA */}
         <motion.div
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true }}
-           transition={{ duration: 0.8 }}
-           variants={fadeInRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          variants={fadeInRight}
         >
-            <h3 className="text-3xl font-serif italic border-b border-zinc-200 pb-4">
-              2.4. A influência da Confissão de Westminster
-            </h3>
-            <p className="text-lg leading-relaxed text-zinc-700 text-justify mt-6">
-              Embora tenha sido elaborada na Inglaterra, a Confissão de
-              Westminster teve um impacto maior na Escócia, onde foi adotada
-              oficialmente pela Igreja Presbiteriana. Ao longo dos séculos, essa
-              confissão se tornou a principal referência doutrinária das igrejas
-              reformadas ao redor do mundo, incluindo o Presbiterianismo no
-              Brasil, que a utiliza até hoje como sua base teológica. Nos
-              próximos tópicos, veremos quais foram os principais motivos para a
-              formulação da Confissão e por que ela continua sendo essencial
-              para a fé reformada.
-            </p>
+          <h3 className="text-3xl font-serif italic border-b border-zinc-200 pb-4">
+            2.4. A influência da Confissão de Westminster
+          </h3>
+          <p className="text-lg leading-relaxed text-zinc-700 md:text-justify mt-6">
+            Embora tenha sido elaborada na Inglaterra, a Confissão de
+            Westminster teve um impacto maior na Escócia, onde foi adotada
+            oficialmente pela Igreja Presbiteriana. Ao longo dos séculos, essa
+            confissão se tornou a principal referência doutrinária das igrejas
+            reformadas ao redor do mundo, incluindo o Presbiterianismo no
+            Brasil, que a utiliza até hoje como sua base teológica. Nos
+            próximos tópicos, veremos quais foram os principais motivos para a
+            formulação da Confissão e por que ela continua sendo essencial
+            para a fé reformada.
+          </p>
         </motion.div>
 
         {/* SEÇÃO 3 - MOTIVOS - Vem de BAIXO */}
-        <motion.section 
-          className="mt-32"
+        <motion.section
+          className="mt-12 md:mt-32"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -336,7 +336,7 @@ export default function ConfissionOfFaith() {
             </h2>
           </div>
 
-          <div className="space-y-12 text-lg leading-relaxed text-zinc-700 text-justify">
+          <div className="space-y-12 text-lg leading-relaxed text-zinc-700 md:text-justify">
             <p>
               Como vimos, a Confissão de Fé de Westminster não surgiu por acaso.
               Sua formulação foi impulsionada por diversos fatores teológicos,
@@ -421,8 +421,8 @@ export default function ConfissionOfFaith() {
         </motion.section>
 
         {/* PARTE 4 E 5 - Texto vindo da ESQUERDA */}
-        <motion.section 
-          className="mt-32 border-t-2 border-zinc-100 pt-20"
+        <motion.section
+          className="mt-12 md:mt-32 border-t-2 border-zinc-100 pt-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -434,7 +434,7 @@ export default function ConfissionOfFaith() {
               <h2 className="text-4xl font-serif italic mb-10 leading-tight">
                 4. Por Que os Crentes Possuem uma Confissão de Fé?
               </h2>
-              <p className="text-zinc-500 mb-8 text-justify">
+              <p className="text-zinc-500 mb-8 md:text-justify">
                 Desde os tempos bíblicos, o povo de Deus tem utilizado
                 declarações doutrinárias. Se a Bíblia é suficiente, qual a
                 importância de uma confissão? Ela serve como um instrumento de
@@ -442,7 +442,7 @@ export default function ConfissionOfFaith() {
               </p>
               <Shield className="text-igreja-teal/20 w-32 h-32" />
             </div>
-            <div className="lg:col-span-7 space-y-8 text-lg text-zinc-700 text-justify">
+            <div className="lg:col-span-7 space-y-8 text-lg text-zinc-700 md:text-justify">
               <p>
                 <strong>4.1. Expressão Coletiva:</strong> A fé cristã é
                 comunitária. Em Deuteronômio 6:4, vemos o Shema Israel: "Ouve, ó
@@ -474,8 +474,8 @@ export default function ConfissionOfFaith() {
         </motion.section>
 
         {/* PARTE 5 - Texto vindo da DIREITA */}
-        <motion.section 
-          className="mt-32 bg-white p-12 md:p-20 shadow-sm border border-zinc-100"
+        <motion.section
+          className="mt-12 md:mt-32 bg-white p-12 md:p-20 shadow-sm border border-zinc-100"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -485,7 +485,8 @@ export default function ConfissionOfFaith() {
           <h2 className="text-3xl font-bold uppercase tracking-tighter mb-10 text-igreja-teal">
             5. Por que Nós Presbiterianos Utilizamos a Confissão?
           </h2>
-          <div className="grid md:grid-cols-2 gap-16 text-zinc-700 leading-relaxed text-justify">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-16 text-zinc-700 leading-relaxed md:text-justify"
+          >
             <div className="space-y-6 text-sm">
               <p>
                 <strong>5.1. Reflexo da Teologia Reformada:</strong> Enfatiza a
@@ -516,8 +517,8 @@ export default function ConfissionOfFaith() {
         </motion.section>
 
         {/* PARTE 6 - RELEVÂNCIA - Vem de BAIXO */}
-        <motion.section 
-          className="mt-32"
+        <motion.section
+          className="mt-12 md:mt-32"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -569,7 +570,7 @@ export default function ConfissionOfFaith() {
 
         {/* CONCLUSÃO FINAL - Vem de BAIXO */}
         <footer className="mt-40 pt-20 border-t border-zinc-900 text-center">
-          <motion.h2 
+          <motion.h2
             className="text-6xl font-serif italic mb-10 leading-none"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -578,8 +579,8 @@ export default function ConfissionOfFaith() {
           >
             Conclusão
           </motion.h2>
-          <motion.p 
-            className="text-2xl text-zinc-500 leading-relaxed max-w-3xl mx-auto mb-20 text-justify"
+          <motion.p
+            className="text-xl md:text-2xl text-zinc-500 leading-relaxed max-w-3xl mx-auto mb-20 text-start md:text-justify"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -590,7 +591,7 @@ export default function ConfissionOfFaith() {
             orienta a vida da igreja e fortalece o ensino e o discipulado.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="inline-block relative"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -602,7 +603,7 @@ export default function ConfissionOfFaith() {
               className="absolute -top-12 -left-12 text-igreja-teal/10 rotate-[-15deg]"
             />
             <div className="bg-zinc-900 text-white p-12 md:p-24 relative z-10">
-              <p className="text-3xl md:text-5xl font-serif italic leading-tight mb-8">
+              <p className="text-2xl md:text-3xl md:text-5xl font-serif italic leading-tight mb-8">
                 “Toda a Escritura é divinamente inspirada e proveitosa para
                 ensinar, repreender, corrigir e instruir em justiça.”
               </p>
