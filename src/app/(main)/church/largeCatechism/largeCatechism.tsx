@@ -157,7 +157,7 @@ export default function LargeCatechism() {
                   <h3 className="text-xl font-bold text-emerald-800 mb-4">
                     {item.n}. {item.q}
                   </h3>
-                  <p className="text-lg leading-relaxed text-zinc-700 text-justify mb-4">
+                  <p className="text-lg leading-relaxed text-zinc-700 md:text-justify mb-4">
                     {item.r}
                   </p>
                   <p className="text-emerald-600/60 font-mono text-xs italic">
@@ -180,7 +180,7 @@ export default function LargeCatechism() {
                 <h3 className="text-sm font-sans font-black uppercase text-emerald-700 mb-6">
                   4. Autoridade das Escrituras
                 </h3>
-                <p className="text-emerald-950 font-medium leading-relaxed mb-6 text-justify">
+                <p className="text-emerald-950 font-medium leading-relaxed mb-6 md:text-justify">
                   Demonstra-se que as Escrituras são a Palavra de Deus - pela
                   majestade e pureza do seu conteúdo, pela harmonia de todas as
                   suas partes, e pelo propósito do seu conjunto, que é dar toda
@@ -214,7 +214,7 @@ export default function LargeCatechism() {
             <h2 className="text-5xl md:text-7xl font-light italic mb-12 tracking-tighter">
               Quem é Deus?
             </h2>
-            <p className="text-2xl md:text-4xl leading-[1.3] text-emerald-50 mb-16 text-justify font-light px-4">
+            <p className="text-2xl md:text-4xl leading-[1.3]  text-emerald-50 mb-16 md:text-justify font-light px-4">
               Deus é{" "}
               <span className="text-emerald-400 font-bold">espírito</span>, em
               si e por si infinito em seu ser, glória, bem-aventurança e
@@ -291,7 +291,7 @@ export default function LargeCatechism() {
               </h2>
               <div className="bg-white p-8 shadow-xl border border-emerald-50">
                 <h3 className="font-bold mb-4">12. Atos Sábios</h3>
-                <p className="text-zinc-600 text-sm leading-relaxed text-justify">
+                <p className="text-zinc-600 text-sm leading-relaxed md:text-justify">
                   Os decretos de Deus são os atos sábios, livres e santos do
                   conselho da sua vontade, pelos quais, desde toda a eternidade,
                   Ele, para a sua própria glória, imutavelmente predestinou tudo
@@ -302,7 +302,7 @@ export default function LargeCatechism() {
                 <h3 className="font-bold mb-4">
                   13. Referência a Anjos e Homens
                 </h3>
-                <p className="text-zinc-600 text-sm leading-relaxed text-justify italic">
+                <p className="text-zinc-600 text-sm leading-relaxed md:text-justify italic">
                   Ele elegeu alguns anjos para a glória, e, em Cristo, escolheu
                   alguns homens para a vida eterna e os meios para consegui-la;
                   deixou e predestinou os mais à desonra e à ira por causa dos
@@ -352,7 +352,7 @@ export default function LargeCatechism() {
                   <h3 className="text-xl font-bold text-emerald-950 mb-4">
                     {item.q}
                   </h3>
-                  <p className="text-lg leading-relaxed text-zinc-700 text-justify">
+                  <p className="text-lg leading-relaxed text-zinc-700 md:text-justify">
                     {item.r}
                   </p>
                 </div>
@@ -375,7 +375,7 @@ export default function LargeCatechism() {
               <h2 className="text-4xl font-black uppercase text-emerald-500 tracking-tighter leading-none">
                 O Homem <br /> e a Queda
               </h2>
-              <p className="text-zinc-400 text-justify leading-relaxed">
+              <p className="text-zinc-400 md:text-justify leading-relaxed">
                 Nossos primeiros pais, sendo deixados à liberdade da sua própria
                 vontade, transgrediram o mandamento de Deus... Essa queda
                 reduziu o gênero humano a um estado de pecado e miséria.
@@ -408,7 +408,7 @@ export default function LargeCatechism() {
                   <h4 className="text-emerald-400 font-bold uppercase text-[10px] tracking-widest">
                     {i.n}. {i.q}
                   </h4>
-                  <p className="text-sm text-zinc-300 text-justify leading-relaxed">
+                  <p className="text-sm text-zinc-300 md:text-justify leading-relaxed">
                     {i.r}
                   </p>
                 </div>
@@ -470,7 +470,7 @@ export default function LargeCatechism() {
                 <h3 className="font-bold text-emerald-800 pb-1">
                   {item.title}
                 </h3>
-                <p className="text-sm text-justify leading-relaxed text-zinc-700">
+                <p className="text-sm md:text-justify leading-relaxed text-zinc-700">
                   {item.text}
                 </p>
               </motion.div>
@@ -494,7 +494,7 @@ export default function LargeCatechism() {
               <h2 className="text-2xl font-black uppercase text-emerald-950 mb-6">
                 Justificação e Santificação
               </h2>
-              <p className="text-xs text-emerald-800/70 leading-relaxed text-justify space-y-4">
+              <p className="text-xs text-emerald-800/70 leading-relaxed md:text-justify space-y-4">
                 <span>
                   70. Justificação é um ato da livre graça, perdoando pecados e
                   aceitando o pecador unicamente pela perfeita obediência de
@@ -520,7 +520,7 @@ export default function LargeCatechism() {
               <h3 className="text-emerald-400 font-sans font-bold uppercase text-[10px] mb-4">
                 61-64. Natureza da Igreja
               </h3>
-              <div className="space-y-6 text-sm text-zinc-700 leading-relaxed text-justify">
+              <div className="space-y-6 text-sm text-zinc-700 leading-relaxed md:text-justify">
                 <p>
                   <strong>Igreja Visível:</strong> Composta de todos quantos
                   professam a verdadeira religião, juntamente com seus filhos.
@@ -599,7 +599,7 @@ export default function LargeCatechism() {
                   <h4 className="text-xl font-bold mb-2 text-emerald-900">
                     {i.q}
                   </h4>
-                  <p className="text-zinc-600 leading-relaxed text-justify">
+                  <p className="text-zinc-600 leading-relaxed md:text-justify">
                     {i.r}
                   </p>
                 </div>
@@ -621,7 +621,7 @@ export default function LargeCatechism() {
               <h3 className="text-2xl font-bold border-b border-emerald-700 pb-6 mb-8 text-emerald-400 uppercase tracking-tighter flex items-center gap-3">
                 <CheckCircle2 size={24} /> 104. Deveres Exigidos
               </h3>
-              <p className="text-sm leading-[1.8] text-justify text-emerald-50">
+              <p className="text-sm leading-[1.8] md:text-justify text-emerald-50">
                 O conhecer e reconhecer Deus como único verdadeiro Deus e nosso
                 Deus, e adorá-lo e glorificá-lo como tal; pensar e meditar nÊle,
                 highly apreciá-lo, honrá-lo, adorá-lo, escolhê-lo, amá-lo,
@@ -644,7 +644,7 @@ export default function LargeCatechism() {
                 <AlertTriangle size={24} className="text-emerald-700" /> 105.
                 Pecados Proibidos
               </h3>
-              <p className="text-[12px] leading-[1.6] text-justify text-zinc-600 space-y-4">
+              <p className="text-[12px] leading-[1.6] md:text-justify text-zinc-600 space-y-4">
                 O ateísmo, negar ou não ter um Deus; a idolatria, ter ou adorar
                 mais do que um Deus; o não tê-lo e não confessá-lo; a
                 ignorância, o esquecimento, as falsas opiniões; o pesquisar
@@ -674,10 +674,10 @@ export default function LargeCatechism() {
               className="absolute -top-12 -left-12 text-emerald-700/10 rotate-[-15deg]"
             />
             <div className="bg-emerald-950 text-white p-12 md:p-24 relative z-10 rounded-sm shadow-2xl">
-              <h2 className="text-6xl font-serif italic mb-10 leading-none">
+              <h2 className="text-5xl md:text-6xl font-serif italic mb-10 leading-none">
                 Conclusão teológica
               </h2>
-              <p className="text-2xl text-emerald-100/60 font-light leading-relaxed max-w-3xl mx-auto mb-16 text-justify px-4">
+              <p className="text-2xl text-emerald-100/60 font-light leading-relaxed max-w-3xl mx-auto mb-16 md:text-justify px-4">
                 O Catecismo Maior preserva a integridade da fé reformada,
                 servindo como uma ferramenta educacional e apologética para a
                 igreja através dos séculos. Cada resposta é uma pedra angular na

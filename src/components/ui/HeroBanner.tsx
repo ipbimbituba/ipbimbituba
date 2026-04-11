@@ -33,7 +33,7 @@ export default function HeroSection({
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-white text-3xl md:text-6xl font-ibarra font-bold tracking-tight text-center"
+          className="text-white text-4xl md:text-6xl font-ibarra font-bold tracking-tight text-center"
         >
           {title}
         </motion.h2>
