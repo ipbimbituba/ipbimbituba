@@ -44,8 +44,8 @@ export default function SectionThree() {
   // ... (mantenha os imports e a lógica do estado iguais)
 
   return (
-    <section className="w-full bg-igreja-teal py-20 md:py-48 lg:py-64 px-5 flex justify-center text-white overflow-x-hidden relative">
-      <div className="max-w-6xl w-full relative flex flex-col items-center">
+    <section className="w-full  bg-igreja-teal py-20 md:py-48 lg:py-64 px-5 flex justify-center text-white overflow-x-hidden relative">
+      <div className="max-w-6xl w-full xl:max-w-5xl relative flex flex-col items-center">
         {/* Setas de Navegação - Ajustadas para acompanhar o novo tamanho */}
         <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 pointer-events-none hidden md:flex items-center justify-between z-20">
           <button
@@ -73,7 +73,7 @@ export default function SectionThree() {
             className="flex flex-col md:flex-row items-center gap-10 md:gap-20 w-full"
           >
             {/* Imagem maior no Desktop */}
-            <div className="relative w-40 h-40 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] flex-shrink-0">
+            <div className="relative w-40 h-40 xl:w-70 xl:h-70 md:w-80 md:h-80  lg:w-[400px] lg:h-[400px]  flex-shrink-0">
               <Image
                 src={items[index].img}
                 alt={items[index].name}
@@ -89,13 +89,13 @@ export default function SectionThree() {
               </span>
 
               {/* Texto do Depoimento Aumentado */}
-              <p className="text-xl md:text-3xl lg:text-4xl font-ibarra italic leading-relaxed mb-10">
+              <p className="text-xl md:text-3xl xl:text-2xl lg:text-4xl font-ibarra italic leading-relaxed mb-10">
                 {items[index].text}
               </p>
 
               <div className="border-l-4 border-white/30 pl-6">
                 {/* Nome e Cargo Aumentados */}
-                <h1 className="text-2xl md:text-4xl font-bold uppercase tracking-widest mb-2">
+                <h1 className="text-2xl xl:text-2xl md:text-4xl font-bold uppercase tracking-widest mb-2">
                   {items[index].name}
                 </h1>
                 <h2 className="text-white/70 text-lg md:text-2xl font-medium">

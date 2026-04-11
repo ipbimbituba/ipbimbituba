@@ -50,7 +50,7 @@ export default function SectionTwo() {
     <section className="bg-mauve-50 py-20 px-4 flex justify-center overflow-hidden">
       {/* Container com largura máxima controlada e gap generoso */}
 
-      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl  w-full grid grid-cols-1 md:grid-cols-3 gap-12">
         {items.map((item, index) => (
           <motion.div
             key={index}
