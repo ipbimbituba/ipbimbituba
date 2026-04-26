@@ -41,7 +41,7 @@ export default function FooterPage() {
       {/* A mágica acontece aqui: grid-cols-1 para celular, 
         sm:grid-cols-2 para tablet e md:grid-cols-4 para desktop.
       */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
+      <div className="xl:max-w-4xl 2xl:max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 ">
         {navItems.map((item, index) => {
           // Pulamos o "Inicio" no footer para focar nas categorias de conteúdo
           if (item.name === "Inicio") return null;
@@ -51,7 +51,7 @@ export default function FooterPage() {
               key={index}
               className={`flex flex-col ${
                 item.name === "Contato"
-                  ? "md:pl-15 border-l md:border-neutral-200 min-w-fit"
+                  ? "md:pl-12 border-l md:border-neutral-200 min-w-fit"
                   : "md:col-span-1"
               }`}
             >
@@ -94,7 +94,7 @@ export default function FooterPage() {
                   {item.submenu.map((subItem, subIndex) => (
                     <li
                       key={subIndex}
-                      className="text-gray-600  hover:text-igreja-dourado hover:translate-x-1 transition-all duration-200 cursor-pointer text-sm md:text-base list-none"
+                      className="text-gray-600  hover:text-igreja-dourado hover:translate-x-1 transition-all duration-200 cursor-pointer text-sm md:text-base xl:text-base 2xl:text-lg list-none"
                     >
                       {subItem}
                     </li>
@@ -116,7 +116,7 @@ export default function FooterPage() {
                   className="text-gray-600 text-sm leading-relaxed "
                 >
                   {item.name === "Contato" ? (
-                    <div className="flex flex-col gap-4 text-gray-600 w-full md:min-w-[300px]">
+                    <div className="flex flex-col gap-4 text-gray-600 xl:min-w-[250px] 2xl:min-w-[300px] w-full">
                       {/* Bloco de Endereço */}
 
                       <div className="group">
@@ -131,7 +131,7 @@ export default function FooterPage() {
                             className="text-gray-600 group-hover:text-igreja-dourado transition-colors md:w-6 md:h-6"
                           />
                           {/* text-sm no mobile (14px) e text-lg no desktop (18px) */}
-                          <p className="text-sm md:text-lg group-hover:text-igreja-dourado leading-tight md:leading-normal">
+                          <p className="text-sm md:text-base xl:text-base 2xl:text-lg group-hover:text-igreja-dourado leading-tight md:leading-normal">
                             Av. Vinte Um de Junho, s/n - Centro, Imbituba - SC.
                           </p>
                         </a>
@@ -147,7 +147,7 @@ export default function FooterPage() {
                             size={18}
                             className="text-gray-600 md:w-7 md:h-7 transition-colors"
                           />
-                          <p className="text-sm md:text-lg leading-tight md:leading-normal">
+                          <p className="text-sm md:text-base xl:text-lg 2xl:text-lg leading-tight md:leading-normal">
                             {/* Escondemos o texto longo no mobile para economizar espaço */}
                             <span className="hidden md:inline">
                               Por favor nos envie contato para E-mail:{" "}
@@ -171,9 +171,9 @@ export default function FooterPage() {
                             size={18}
                             className="text-gray-600 group-hover:text-igreja-dourado md:w-6 md:h-6"
                           />
-                          <p className="text-sm md:text-lg group-hover:text-igreja-dourado">
+                          <p className="text-sm md:text-base xl:text-lg 2xl:text-lg group-hover:text-igreja-dourado">
                             WhatsApp:{" "}
-                            <span className="font-bold text-green-900 md:text-xl md:ml-1">
+                            <span className="font-bold text-green-900 md:text-lg xl:text-xl 2xl:text-xl md:ml-1">
                               (48) 99868-0229
                             </span>
                           </p>
