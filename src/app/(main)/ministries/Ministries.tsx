@@ -64,7 +64,7 @@ export default function MinistriesPage() {
       </div>
 
       {/* 2. TEXTO INTRODUTÓRIO ASSIMÉTRICO */}
-      <div className="max-w-7xl mx-auto px-6 py-20 md:py-32 grid md:grid-cols-5 gap-12 items-center">
+      <div className="xl:max-w-5xl 2xl:max-w-7xl mx-auto px-6 py-20 md:py-32 grid md:grid-cols-5 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -72,7 +72,7 @@ export default function MinistriesPage() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="md:col-span-3 space-y-6 border-l-4 border-[#bf9b30] pl-8"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-tight uppercase">
+          <h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-bold text-white tracking-tight leading-tight uppercase">
             Um Corpo, Muitos Membros, Um Só{" "}
             <span className="italic text-[#bf9b30]">Propósito.</span>
           </h2>
@@ -83,7 +83,7 @@ export default function MinistriesPage() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 1 }}
-          className="md:col-span-2 text-lg text-zinc-400 leading-relaxed font-light"
+          className="md:col-span-2 xl:text-base 2xl:text-lg text-zinc-400 leading-relaxed font-light"
         >
           Nossa missão se manifesta através do serviço e do cuidado mútuo. Por
           meio das nossas sociedades internas e ministérios específicos,
@@ -93,7 +93,7 @@ export default function MinistriesPage() {
       </div>
 
       {/* 3. LAYOUT EXPLOSIVO (MURAL DE COLAGEM) */}
-      <div className="max-w-7xl mx-auto px-6 py-20 md:py-40 space-y-32 md:space-y-60 ">
+      <div className="xl:max-w-5xl 2xl:max-w-7xl mx-auto px-6 py-20 md:py-40 space-y-32 md:space-y-60 ">
         {ministries.map((item, index) => (
           <motion.div
             key={index}
@@ -120,7 +120,7 @@ export default function MinistriesPage() {
                 <span className="text-white/60 font-mono text-xs uppercase tracking-widest mb-2 block ">
                   {item.tags}
                 </span>
-                <h2 className="text-white text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none transition-all group-hover:text-[#bf9b30] ">
+                <h2 className="text-white text-5xl xl:text-6xl 2xl:text-7xl font-black uppercase tracking-tighter leading-none transition-all group-hover:text-[#bf9b30] ">
                   {item.title}
                 </h2>
                 <div className="absolute top-8 right-8 w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
