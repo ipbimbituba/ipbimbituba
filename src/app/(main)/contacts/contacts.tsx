@@ -61,6 +61,7 @@ export default function PageContacts() {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h2 className="text-igreja-dourado  font-bold uppercase tracking-widest text-sm xl:text-sm 2xl:text-base">
@@ -71,6 +72,7 @@ export default function PageContacts() {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <h1 className="text-3xl xl:text-4xl 2xl:text-5xl font-black text-igreja-teal leading-tight">
@@ -81,6 +83,7 @@ export default function PageContacts() {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
           {/* Ajuste: text-lg no mobile e text-2xl no desk para não ficar exagerado */}
@@ -94,6 +97,7 @@ export default function PageContacts() {
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="flex flex-col gap-5 mt-4 w-full mb-25"
         >
@@ -170,6 +174,7 @@ export default function PageContacts() {
           <motion.div
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h2 className="text-igreja-dourado font-bold uppercase tracking-widest text-sm xl:text-sm 2xl:text-base">
@@ -180,6 +185,7 @@ export default function PageContacts() {
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
             <h1 className="text-3xl xl:text-3xl 2xl:text-4xl font-black text-igreja-teal leading-tight">
