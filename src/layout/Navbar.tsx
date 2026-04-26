@@ -165,7 +165,7 @@ export default function Navbar() {
               height={80}
               className="w-12 h-12 md:w-8 md:h-8 transition-all duration-300"
             />
-            <h1 className="hidden md:block text-igreja-teal font-semibold xl:text-lg 2xl:text-xl">
+            <h1 className="hidden md:block text-igreja-teal font-semibold xl:text-sm 2xl:text-lg">
               Igreja Presbiteriana de Imbituba
             </h1>
           </div>
@@ -192,7 +192,7 @@ export default function Navbar() {
                     {item.submenu ? (
                       <div className="relative">
                         <button
-                          className={`font-extralight transition-colors cursor-pointer xl:text-lg 2xl:text-xl flex items-center gap-1 ${isActive
+                          className={`font-extralight transition-colors cursor-pointer xl:text-base 2xl:text-lg flex items-center gap-1 ${isActive
                             ? "text-igreja-dourado font-normal"
                             : "text-gray-400 hover:text-igreja-teal"
                             }`}
@@ -243,7 +243,7 @@ export default function Navbar() {
                     ) : (
                       <div
                         onClick={() => handleNavigation(item.href)}
-                        className={`font-extralight cursor-pointer transition-colors xl:text-lg 2xl:text-xl ${isActive
+                        className={`font-extralight cursor-pointer transition-colors xl:text-base 2xl:text-xl ${isActive
                           ? "text-igreja-dourado font-normal"
                           : "text-gray-400 hover:text-igreja-teal"
                           }`}
@@ -257,7 +257,7 @@ export default function Navbar() {
               <li>
                 <button
                   onClick={() => handleLogin()}
-                  className="flex items-center gap-2 bg-igreja-teal cursor-pointer text-white px-10 py-2 xl:text-base  2xl:text-lg font-bold rounded-lg border-b-2 border-black/30 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)] hover:brightness-110 active:border-b-0 active:translate-y-[1px] active:shadow-inner"
+                  className="flex items-center gap-2 bg-igreja-teal cursor-pointer text-white px-10 py-2 xl:text-sm  2xl:text-lg font-bold rounded-lg border-b-2 border-black/30 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)] hover:brightness-110 active:border-b-0 active:translate-y-[1px] active:shadow-inner"
                 >
                   <Users size={18} />
                   Usuário
