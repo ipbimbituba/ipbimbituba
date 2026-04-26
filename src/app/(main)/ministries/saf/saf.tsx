@@ -52,7 +52,7 @@ export default function ContentSaf() {
         <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#fcfaf7] to-transparent" />
       </div>
 
-      <article className="max-w-7xl mx-auto px-6 md:px-12 pb-40 pt-20">
+      <article className="xl:max-w-5xl 2xl:max-w-7xl mx-auto px-6 md:px-12 pb-40 pt-20">
         {/* 2. CABEÇALHO EDITORIAL RESPONSIVO */}
         <motion.header
           className="border-b border-black/10 pb-16 mb-24"
@@ -83,13 +83,13 @@ export default function ContentSaf() {
               </div>
             </div>
             <div className="md:col-span-8 text-center md:text-right space-y-4">
-              <h1 className="text-6xl md:text-9xl font-black tracking-tighter leading-[0.85] text-[#003366] uppercase">
+              <h1 className="text-7xl 2xl:text-9xl font-black tracking-tighter leading-[0.85] text-[#003366] uppercase">
                 Sociedade <br />{" "}
                 <span className="font-light italic tracking-normal lowercase text-zinc-500">
                   Auxiliadora
                 </span>
               </h1>
-              <p className="text-[#bf9b30] font-sans text-lg md:text-2xl uppercase tracking-[0.2em] font-black">
+              <p className="text-[#bf9b30] font-sans text-sm xl:text-xl 2xl:text-2xl uppercase tracking-[0.2em] font-black">
                 Igreja Presbiteriana de Imbituba
               </p>
             </div>
@@ -108,10 +108,10 @@ export default function ContentSaf() {
           >
             <div className="space-y-6">
               <ScrollText className="text-[#003366]" size={32} />
-              <h3 className="font-sans font-black uppercase text-xl tracking-widest text-[#003366]">
+              <h3 className="font-sans font-black uppercase xl:text-base 2xl:text-xl tracking-widest text-[#003366]">
                 O Moto
               </h3>
-              <p className="text-2xl italic leading-snug text-zinc-700 border-l-4 border-[#bf9b30] pl-6">
+              <p className="xl:text-lg 2xl:text-2xl italic leading-snug text-zinc-700 border-l-4 border-[#bf9b30] pl-6">
                 "Sejamos verdadeiras auxiliadoras, prontas para todo o bom
                 trabalho."
               </p>
@@ -122,7 +122,7 @@ export default function ContentSaf() {
               <h3 className="font-sans font-black uppercase text-xs tracking-[0.3em] mb-4">
                 Lema Oficial
               </h3>
-              <p className="text-xl font-light italic leading-relaxed">
+              <p className="xl:text-base 2xl:text-xl font-light italic leading-relaxed">
                 "Servindo ao Senhor com alegria e amor, em prol da Sua causa."
               </p>
             </div>
@@ -174,11 +174,11 @@ export default function ContentSaf() {
             <div className="space-y-8">
               <div className="flex items-center gap-3 text-[#bf9b30]">
                 <History size={24} />
-                <span className="font-sans font-bold uppercase tracking-widest text-sm">
+                <span className="font-sans font-bold uppercase tracking-widest  text-sm">
                   Registro Histórico
                 </span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-black text-[#003366] uppercase tracking-tighter leading-none">
+              <h2 className="text-4xl xl:text-5xl 2xl:text-6xl font-black text-[#003366] uppercase tracking-tighter leading-none">
                 Trajetória da <br />{" "}
                 <span className="text-zinc-400 italic font-light lowercase tracking-normal">
                   Mulher Presbiteriana
@@ -191,7 +191,7 @@ export default function ContentSaf() {
                   Fonte: Confederação Nacional <a className="text-[#bf9b30] hover:underline" href="http://www.saf.org.br" target="_blank" rel="noopener noreferrer">http://www.saf.org.br</a>
                 </p>  
 
-                <p className="first-letter:text-8xl first-letter:font-black first-letter:text-[#003366] first-letter:float-left first-letter:mr-4 first-letter:leading-[0.65]">
+                <p className="first-letter:xl:text-7xl 2xl:text-8xl first-letter:font-black first-letter:text-[#003366] first-letter:float-left first-letter:mr-4 xl:text-base 2xl:text-lg first-letter:leading-[0.65]">
                   Desde a chegada da IPB no Brasil, encontramos pequenos grupos
                   de mulheres surgindo para auxiliar no trabalho de cada
                   congregação. O trabalho feminino crescia e não demorou muito
@@ -209,7 +209,7 @@ export default function ContentSaf() {
                   </p>
                 </div>
 
-                <p>
+                <p className="xl:text-base 2xl:text-lg">
                   Em 1921, por iniciativa da missionária Genoveva Marchant,
                   formou-se a primeira Federação, composta de 12 SAFs. Já em
                   1926, uma comissão de 100 mulheres compareceu à Assembleia
@@ -217,24 +217,24 @@ export default function ContentSaf() {
                   Presbitérios.
                 </p>
 
-                <p>
+                <p className="xl:text-base 2xl:text-lg">
                   O nome atual,{" "}
                   <strong>Sociedade Auxiliadora Feminina (SAF)</strong>, foi
                   adotado em 1941 durante o 1º Congresso Nacional, visando
                   incentivar o ingresso de moças com sua juventude e dinamismo.
                 </p>
 
-                <h4 className="text-2xl font-bold text-[#003366] border-b border-black/10 pb-2 mb-4 break-inside-avoid uppercase tracking-tighter">
+                <h4 className="xl:text-xl 2xl:text-2xl font-bold text-[#003366] border-b border-black/10 pb-2 mb-4 break-inside-avoid uppercase tracking-tighter">
                   Atividades e Pilares
                 </h4>
-                <p>
+                <p className="xl:text-base 2xl:text-lg">
                   As mulheres da SAF estão envolvidas em visitação a enfermos,
                   evangelismo, ação social, apoio a missionários, estudo da
                   Palavra e intercessão. Elas contribuem para o fortalecimento
                   da fé e o serviço ao próximo em Imbituba.
                 </p>
 
-                <h4 className="text-2xl font-bold text-[#003366] border-b border-black/10 pb-2 mb-4 break-inside-avoid uppercase tracking-tighter">
+                <h4 className="xl:text-lg 2xl:text-2xl font-bold text-[#003366] border-b border-black/10 pb-2 mb-4 break-inside-avoid uppercase tracking-tighter">
                   Níveis de Atuação
                 </h4>
                 <ul className="list-none space-y-6 text-base italic text-zinc-600">
@@ -281,7 +281,7 @@ export default function ContentSaf() {
                 className="absolute top-8 right-8 text-zinc-300"
                 size={60}
               />
-              <p className="text-3xl font-serif italic text-zinc-600 leading-tight max-w-2xl">
+              <p className="xl:text-xl 2xl:text-3xl font-serif italic text-zinc-600 leading-tight max-w-2xl">
                 "As mulheres da SAF são uma força de integração vital para a
                 vida da igreja local."
               </p>
@@ -299,13 +299,13 @@ export default function ContentSaf() {
             className="space-y-12"
           >
             <Award className="mx-auto text-[#bf9b30]" size={48} />
-            <h2 className="text-4xl md:text-6xl font-black text-[#003366] uppercase tracking-tighter">
+            <h2 className="text-4xl xl:text-5xl 2xl:text-6xl font-black text-[#003366] uppercase tracking-tighter">
               Alegria e Amor <br />{" "}
               <span className="italic font-serif font-light text-zinc-400 lowercase tracking-normal">
                 servindo ao mestre
               </span>
             </h2>
-            <p className="text-xl font-serif italic text-zinc-500 max-w-2xl mx-auto">
+            <p className="xl:text-base 2xl:text-xl font-serif italic text-zinc-500 max-w-2xl mx-auto">
               Objetivando principalmente a honra e glória do Senhor e Salvador
               Jesus Cristo. 🙏🌸
             </p>
