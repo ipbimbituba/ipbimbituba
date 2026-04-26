@@ -1,12 +1,11 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 interface SocialProps {
-  size?: number;
   className?: string;
-  hoverColor?: string;
+  iconClassName?: string;
 }
 
-export default function SocialButtons({ className = "" }: { className?: string }) {
+export default function SocialButtons({ className = "", iconClassName }: SocialProps) {
   // Configuração dos links da igreja
   const socialLinks = {
     facebook: "https://facebook.com/ipbimbituba",
@@ -14,7 +13,8 @@ export default function SocialButtons({ className = "" }: { className?: string }
     linkedin: "#", // Se não tiver, pode deixar "#" ou remover o ícone
     youtube: "https://youtube.com/@ipbimbituba",
   };
-  const iconSizeClasses = "w-4 h-4 xl:w-[15px] xl:h-[15px] 2xl:w-[20px] 2xl:h-[20px]";
+  // Tamanho padrão pequeno (navbar), pode ser sobrescrito via iconClassName
+  const iconSizeClasses = iconClassName ?? "w-4 h-4 xl:w-[15px] xl:h-[15px] 2xl:w-[20px] 2xl:h-[20px]";
 
   return (
     <div className={`flex gap-4 ${className}`}>

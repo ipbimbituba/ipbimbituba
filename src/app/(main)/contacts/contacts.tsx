@@ -161,6 +161,7 @@ export default function PageContacts() {
             </p>
             <SocialButtons
               className="justify-center md:justify-start gap-5"
+              iconClassName="w-6 h-6 xl:w-5 xl:h-5 2xl:w-7 2xl:h-7"
             />
           </div>
         </motion.div>

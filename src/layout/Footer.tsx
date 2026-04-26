@@ -187,6 +187,7 @@ export default function FooterPage() {
                         </p>
                         <SocialButtons
                           className="justify-center  gap-4 md:gap-5 items-center"
+                          iconClassName="w-6 h-6 xl:w-5 xl:h-5 2xl:w-7 2xl:h-7"
                         />
                       </div>
                     </div>
