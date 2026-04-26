@@ -211,9 +211,8 @@ export default function PageContacts() {
               />
             ))}
             <div className="w-full mt-4">
-              <ButtonComp
-              onent mensagem="Enviar mensagem" />
-            </div>
+              <ButtonComponent mensagem="Enviar mensagem" />
+              </div>
           </form>
         </div>
       </div>
