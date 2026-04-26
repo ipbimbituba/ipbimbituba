@@ -124,7 +124,7 @@ export default function Navbar() {
               >
                 <FaWhatsapp
                   className="text-gray-600 group-hover:text-igreja-dourado text-sm transition-colors cursor-pointer"
-                  size={15}
+                  
                 />
                 <p className="xl:text-xs 2xl:text-sm text-gray-500 group-hover:hover:text-igreja-dourado">
                   48 9868-0229
@@ -141,7 +141,7 @@ export default function Navbar() {
               >
                 <IoLocationSharp
                   className="text-gray-600 group-hover:hover:text-igreja-dourado text-sm transition-colors"
-                  size={15}
+                
                 />
                 <p className="xl:text-xs 2xl:text-sm text-gray-500 group-hover:hover:text-igreja-dourado">
                   Av. Vinte Um de Junho, s/n - Centro, Imbituba - SC
