@@ -283,7 +283,7 @@ export default function SectionChurch() {
       </div>
 
       {/* 5. SEÇÃO CONSELHO (ESTILO EDITORIAL) */}
-      <div className="max-w-7xl mx-auto px-6 py-32">
+      <div className=" xl:max-w-5xl 2xl:max-w-7xl mx-auto px-6 py-32">
         <div className="flex flex-col lg:flex-row justify-between items-baseline mb-20 gap-8">
           <div className="flex items-center gap-4">
             <span className="h-px w-12 bg-igreja-teal" />
@@ -291,7 +291,7 @@ export default function SectionChurch() {
               Liderança e Governo
             </h2>
           </div>
-          <h2 className="text-5xl md:text-8xl font-light tracking-tighter text-slate-900">
+          <h2 className="text-5xl xl:text-7xl 2xl:text-8xl font-light tracking-tighter text-slate-900">
             O{" "}
             <span className="font-serif italic text-igreja-teal">Conselho</span>
           </h2>

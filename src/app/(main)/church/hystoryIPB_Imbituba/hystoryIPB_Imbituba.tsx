@@ -237,14 +237,14 @@ export default function HystoryIPB_Imbituba() {
         </div>
       </section>
 
-      <main className="max-w-[1350px] mx-auto px-6 py-24">
+      <main className="xl:max-w-5xl 2xl:max-w-7xl mx-auto px-6 py-24">
         {/* 2. CONTEXTO INICIAL */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-16 mb-48">
           <div className="md:col-span-8">
             <h2 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-8 leading-tight text-white italic">
               A boa mão do Senhor sobre a nossa cidade.
             </h2>
-            <div className="space-y-6 text-xl xl:text-lg 2xl:text-3xl text-neutral-300 leading-relaxed text-justify font-light">
+            <div className="space-y-6 text-xl xl:text-base 2xl:text-lg text-neutral-300 leading-relaxed text-justify font-light">
               <p>
                 O Rev. Emerson Baran Santos chegou em Imbituba em dezembro de
                 2016. Com uma população de 45 mil habitantes na época, o desafio
@@ -275,7 +275,7 @@ export default function HystoryIPB_Imbituba() {
             <h3 className="text-3xl font-bold uppercase mb-6 text-white tracking-tight">
               Primeiro Local
             </h3>
-            <p className="text-[#cce2e4] leading-relaxed mb-8">
+            <p className="text-sm xl:text-base 2xl:text-lg text-[#cce2e4] leading-relaxed mb-8">
               O salão na Av. Brasil para 60 pessoas foi o marco inicial. Ali, o
               discipulado nos lares e o ensino da Fé Reformada começaram a
               florescer, atraindo aqueles que buscavam a verdade bíblica.
@@ -298,14 +298,14 @@ export default function HystoryIPB_Imbituba() {
 
         <section className="mb-48 flex flex-col md:flex-row-reverse gap-x-28 gap-y-12 items-center px-3 md:px-10 ">
           <div className="w-full md:w-[45%] order-2 md:order-1 flex flex-col justify-center ">
-            <h2 className=" text-5xl md:text-7xl font-black uppercase text-white leading-none mb-8 tracking-">
+            <h2 className=" text-5xl xl:text-6xl 2xl:text-7xl font-black uppercase text-white leading-none mb-8 tracking-">
               <span className="text-[#215D63] bg-white px-3">TERRENO</span>
             </h2>
             <div className="space-y-6 text-lg text-neutral-300">
               <p className="text-2xl font-bold text-white italic leading-tight">
                 Dia 30 de maio de 2020
               </p>
-              <p className=" leading-relaxed text-justify">
+              <p className="text-sm xl:text-base 2xl:text-lg leading-relaxed text-justify">
                 Em 30 de maio de 2020, a IPB/JMN adquiriu um terreno de 1.800
                 m². Após três anos de atrasos causados por erros de demarcação e
                 questões de servidão fluvial junto à Prefeitura, a escrituração
@@ -331,16 +331,16 @@ export default function HystoryIPB_Imbituba() {
         <section className="mb-48 flex flex-col md:flex-row gap-x-28 gap-y-12 items-center px-3 md:px-10">
           {/* Texto ocupa 45% */}
           <div className="w-full md:w-[45%] order-2 md:order-1 flex flex-col justify-center">
-            <h2 className="text-5xl md:text-7xl font-black uppercase text-white leading-none mb-8 tracking-tighter">
+            <h2 className="text-5xl xl:text-6xl 2xl:text-7xl font-black uppercase text-white leading-none mb-8 tracking-tighter">
               MÃO NA
               <br />
               <span className="text-[#215D63] bg-white px-3">MASSA</span>
             </h2>
             <div className="space-y-6 text-lg text-neutral-300">
-              <p className="text-2xl font-bold text-white italic leading-tight">
+              <p className="text-xl xl:text-2xl 2xl:text-3xl font-bold text-white italic leading-tight">
                 31 voluntários. 30 dias. Um templo.
               </p>
-              <p className="leading-relaxed text-justify">
+              <p className="text-sm xl:text-base 2xl:text-xl leading-relaxed text-justify">
                 Sob a coordenação do Presb. Paulo Ivo, voluntários de todo o
                 Brasil ergueram nosso templo de 34x11 metros. Um esforço
                 conjunto para edificar um lugar de adoração.
@@ -366,7 +366,7 @@ export default function HystoryIPB_Imbituba() {
         <section className="mb-48 flex flex-col md:flex-row gap-x-28 gap-y-12 items-center px-6 md:px-16">
           {/* Texto ocupa 45% */}
           <div className="w-full md:w-[45%] order-2 md:order-1 flex flex-col justify-center">
-            <h2 className="text-4xl md:text-7xl font-black uppercase text-white leading-none mb-8 tracking-tighter">
+            <h2 className="text-4xl xl:text-6xl 2xl:text-7xl font-black uppercase text-white leading-none mb-8 tracking-tighter">
               {/* Corrigido: INAUGURAÇÃO */}
               <span className="text-[#215D63] bg-white px-3 italic">
                 INAUGURAÇÃO
@@ -376,10 +376,10 @@ export default function HystoryIPB_Imbituba() {
             <div className="space-y-8 text-lg text-neutral-300">
               {/* 1. O EVENTO */}
               <div className="space-y-2">
-                <p className="text-2xl font-bold text-white italic leading-tight">
+                <p className="text-base xl:text-xl 2xl:text-2xl font-bold text-white italic leading-tight">
                   02 de Dezembro de 2023
                 </p>
-                <p className="text-sm xl:text-lg 2xl:text-xl leading-relaxed text-justify">
+                <p className="text-sm xl:text-base 2xl:text-xl leading-relaxed text-justify">
                   Com a igreja repleta de visitantes louvando ao Senhor,
                   celebramos a inauguração do nosso templo. O Coral da I.P.
                   Camboriú conduziu a igreja em momentos profundos de louvor e
@@ -401,7 +401,7 @@ export default function HystoryIPB_Imbituba() {
 
               {/* 3. O MARCO HISTÓRICO (Destaque final da transição) */}
               <div className="pt-4">
-                <p className="text-sm xl:text-lg 2xl:text-xl leading-relaxed text-justify">
+                <p className="text-sm xl:text-base 2xl:text-xl leading-relaxed text-justify">
                   O dia seguinte,{" "}
                   <span className="text-white font-bold">03/12/2023</span>,
                   marcou o auge de nossa jornada. Por decisão do PLSC, deixamos
@@ -445,11 +445,11 @@ export default function HystoryIPB_Imbituba() {
           </div>
 
           <div className="max-w-2xl mx-auto space-y-8">
-            <h2 className="text-5xl md:text-6xl font-black text-white italic uppercase tracking-tighter leading-none">
+            <h2 className=" text-5xl xl:text-6xl 2xl:text-6xl font-black text-white italic uppercase tracking-tighter leading-none">
               03 DE DEZEMBRO <br /> DE 2023
             </h2>
             <div className="h-1 w-20 bg-[#215D63] mx-auto" />
-            <p className="text-sm xl:text-lg 2xl:text-xl text-neutral-400 leading-relaxed font-light italic">
+            <p className="text-sm xl:text-base 2xl:text-xl text-neutral-400 leading-relaxed font-light italic">
               Nossa profunda gratidão à JMN, aos Presbitérios de Florianópolis e
               Litorâneo Sul Catarinense, ao Projeto Mão na Massa e a todos os
               intercessores e irmãos que cooperaram desde 2017. Acima de tudo,
