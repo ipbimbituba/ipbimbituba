@@ -126,7 +126,7 @@ export default function Navbar() {
                   className="text-gray-600 group-hover:text-igreja-dourado text-sm transition-colors cursor-pointer"
                   size={15}
                 />
-                <p className="text-sm text-gray-500 group-hover:hover:text-igreja-dourado">
+                <p className="xl:text-xs 2xl:text-sm text-gray-500 group-hover:hover:text-igreja-dourado">
                   48 9868-0229
                 </p>
               </a>
@@ -143,7 +143,7 @@ export default function Navbar() {
                   className="text-gray-600 group-hover:hover:text-igreja-dourado text-sm transition-colors"
                   size={15}
                 />
-                <p className="text-sm text-gray-500 group-hover:hover:text-igreja-dourado">
+                <p className="xl:text-xs 2xl:text-sm text-gray-500 group-hover:hover:text-igreja-dourado">
                   Av. Vinte Um de Junho, s/n - Centro, Imbituba - SC
                 </p>
               </a>
@@ -165,7 +165,7 @@ export default function Navbar() {
               height={80}
               className="w-12 h-12 md:w-8 md:h-8 transition-all duration-300"
             />
-            <h1 className="hidden md:block text-igreja-teal font-semibold text-xl">
+            <h1 className="hidden md:block text-igreja-teal font-semibold xl:text-lg 2xl:text-xl">
               Igreja Presbiteriana de Imbituba
             </h1>
           </div>
@@ -192,14 +192,14 @@ export default function Navbar() {
                     {item.submenu ? (
                       <div className="relative">
                         <button
-                          className={`font-extralight transition-colors cursor-pointer text-xl flex items-center gap-1 ${isActive
+                          className={`font-extralight transition-colors cursor-pointer xl:text-lg 2xl:text-xl flex items-center gap-1 ${isActive
                             ? "text-igreja-dourado font-normal"
                             : "text-gray-400 hover:text-igreja-teal"
                             }`}
                         >
                           {item.name}
                           <ChevronDown
-                            className={`w-4 h-4 transition-transform duration-300 ${hoveredMenu === item.name
+                            className={`w-4 h-4 transition-transform duration-300  ${hoveredMenu === item.name
                               ? "rotate-180"
                               : "rotate-0"
                               }`}
@@ -229,7 +229,7 @@ export default function Navbar() {
                               </div>
 
                               <span
-                                className={`transition-all duration-300 ${hoveredIndex === subIndex
+                                className={`transition-all duration-300 xl:text-base 2xl:text-lg ${hoveredIndex === subIndex
                                   ? "translate-x-1 text-igreja-teal"
                                   : "translate-x-0 text-gray-400"
                                   }`}
@@ -243,7 +243,7 @@ export default function Navbar() {
                     ) : (
                       <div
                         onClick={() => handleNavigation(item.href)}
-                        className={`font-extralight cursor-pointer transition-colors text-xl ${isActive
+                        className={`font-extralight cursor-pointer transition-colors xl:text-lg 2xl:text-xl ${isActive
                           ? "text-igreja-dourado font-normal"
                           : "text-gray-400 hover:text-igreja-teal"
                           }`}
@@ -257,7 +257,7 @@ export default function Navbar() {
               <li>
                 <button
                   onClick={() => handleLogin()}
-                  className="flex items-center gap-2 bg-igreja-teal cursor-pointer text-white px-10 py-2 text-lg font-bold rounded-lg border-b-2 border-black/30 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)] hover:brightness-110 active:border-b-0 active:translate-y-[1px] active:shadow-inner"
+                  className="flex items-center gap-2 bg-igreja-teal cursor-pointer text-white px-10 py-2 xl:text-base  2xl:text-lg font-bold rounded-lg border-b-2 border-black/30 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)] hover:brightness-110 active:border-b-0 active:translate-y-[1px] active:shadow-inner"
                 >
                   <Users size={18} />
                   Usuário
