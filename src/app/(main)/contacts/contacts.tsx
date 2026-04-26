@@ -57,7 +57,7 @@ export default function PageContacts() {
     
     <div className="flex flex-col  lg:flex-row items-center lg:items-start justify-center bg-gray-50 py-16 px-6 md:py-32 lg:py-40 gap-16 lg:gap-24">
      
-      <div className="flex mt-10 mb-20 flex-col items-center md:items-start text-center md:text-left w-full xl:max-w-xl 2xl:max-w-2xl gap-6">
+      <div className="flex mt-10 mb-20 flex-col items-center md:items-start text-center md:text-left w-full xl:max-w-lg 2xl:max-w-2xl gap-6">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -84,7 +84,7 @@ export default function PageContacts() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
           {/* Ajuste: text-lg no mobile e text-2xl no desk para não ficar exagerado */}
-          <p className="text-gray-600 leading-relaxed text-lg xl:text-xl 2xl:text-2xl text-justify md:text-left">
+          <p className="text-gray-600 leading-relaxed text-lg xl:text-lg 2xl:text-2xl text-justify md:text-left">
             Convidamos você a vir exatamente como você é e a fazer parte da
             nossa comunidade de pessoas que se esforçam juntas para descobrir o
             propósito e o plano de Deus para suas vidas.
@@ -165,7 +165,7 @@ export default function PageContacts() {
       </div>
 
      
-      <div className="w-full max-w-2xl">
+      <div className="w-full xl:max-w-lg 2xl:max-w-2xl">
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-6 w-full">
           <motion.div
             initial={{ x: 50, opacity: 0 }}
@@ -182,7 +182,7 @@ export default function PageContacts() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            <h1 className="text-3xl xl:text-4xl 2xl:text-5xl font-black text-igreja-teal leading-tight">
+            <h1 className="text-3xl xl:text-3xl 2xl:text-4xl font-black text-igreja-teal leading-tight">
               Nós queremos ouvir você
             </h1>
           </motion.div>
@@ -192,7 +192,7 @@ export default function PageContacts() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
-            <p className="text-gray-600 leading-relaxed text-lg xl:text-xl 2xl:text-2xl text-justify md:text-left">
+            <p className="text-gray-600 leading-relaxed text-lg xl:text-lg 2xl:text-2xl text-justify md:text-left">
               Se você tiver alguma pergunta, solicitação ou história para
               compartilhar conosco, adoraríamos ouvir você.
             </p>
@@ -211,7 +211,8 @@ export default function PageContacts() {
               />
             ))}
             <div className="w-full mt-4">
-              <ButtonComponent mensagem="Enviar mensagem" />
+              <ButtonComp
+              onent mensagem="Enviar mensagem" />
             </div>
           </form>
         </div>

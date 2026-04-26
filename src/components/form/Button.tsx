@@ -14,7 +14,7 @@ export default function ButtonComponent({ mensagem }: typeMensagem) {
       <div className="pt-4 flex justify-center md:justify-start">
         <Button
           asChild
-          className="bg-igreja-teal hover:bg-[#1a4a4f] rounded-none text-white w-full md:w-60 h-16 text-lg cursor-pointer shadow-lg transition-all"
+          className="bg-igreja-teal hover:bg-[#1a4a4f] rounded-none text-white w-full  md:w-60 h-16 xl:text-base 2xl:text-lg cursor-pointer shadow-lg transition-all"
         >
           <button
             type="submit"
