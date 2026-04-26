@@ -94,7 +94,7 @@ export default function FooterPage() {
                   {item.submenu.map((subItem, subIndex) => (
                     <li
                       key={subIndex}
-                      className="text-gray-600  hover:text-igreja-dourado hover:translate-x-1 transition-all duration-200 cursor-pointer text-sm md:text-base xl:text-lg 2xl:text-xl list-none"
+                      className="text-gray-600  hover:text-igreja-dourado hover:translate-x-1 transition-all duration-200 cursor-pointer text-sm md:text-base xl:text-base 2xl:text-xl list-none"
                     >
                       {subItem}
                     </li>
@@ -131,7 +131,7 @@ export default function FooterPage() {
                             className="text-gray-600 group-hover:text-igreja-dourado transition-colors md:w-6 md:h-6"
                           />
                           {/* text-sm no mobile (14px) e text-lg no desktop (18px) */}
-                          <p className="text-sm xl:text-lg 2xl:text-xl group-hover:text-igreja-dourado leading-tight md:leading-normal">
+                          <p className="text-sm xl:text-base 2xl:text-xl group-hover:text-igreja-dourado leading-tight md:leading-normal">
                             Av. Vinte Um de Junho, s/n - Centro, Imbituba - SC.
                           </p>
                         </a>
@@ -147,7 +147,7 @@ export default function FooterPage() {
                             size={18}
                             className="text-gray-600 md:w-7 md:h-7 transition-colors"
                           />
-                          <p className="text-sm md:text-lg xl:text-lg 2xl:text-xl leading-tight md:leading-normal">
+                          <p className="text-sm md:text-lg xl:text-base 2xl:text-xl leading-tight md:leading-normal">
                             {/* Escondemos o texto longo no mobile para economizar espaço */}
                             <span className="hidden md:inline">
                               Por favor nos envie contato para E-mail:{" "}
@@ -171,9 +171,9 @@ export default function FooterPage() {
                             size={18}
                             className="text-gray-600 group-hover:text-igreja-dourado md:w-6 md:h-6"
                           />
-                          <p className="text-sm md:text-lg xl:text-sm 2xl:text-xl group-hover:text-igreja-dourado">
+                          <p className="text-sm md:text-lg xl:text-base 2xl:text-xl group-hover:text-igreja-dourado">
                             WhatsApp:{" "}
-                            <span className="font-bold text-green-900 md:text-xl xl:text-2xl 2xl:text-3xl md:ml-1">
+                            <span className="font-bold text-green-900 md:text-xl xl:text-base 2xl:text-2xl md:ml-1">
                               (48) 99868-0229
                             </span>
                           </p>
