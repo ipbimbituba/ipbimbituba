@@ -122,7 +122,7 @@ export default function SectionChurch() {
       </div>
 
       {/* 2. CARD DE BOAS-VINDAS */}
-      <div className="max-w-7xl mx-auto px-6 -mt-16 md:-mt-24 relative z-20">
+      <div className="xl:max-w-5xl 2xl:max-w-7xl mx-auto px-6 -mt-16 md:-mt-24 relative z-20">
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -130,12 +130,12 @@ export default function SectionChurch() {
           className="bg-white p-8 md:p-16 lg:p-20 shadow-2xl rounded-sm border-t-4 border-igreja-teal"
         >
           <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight text-slate-800">
+            <h2 className="text-3xl xl:text-4xl 2xl:text-5xl font-bold leading-tight tracking-tight text-slate-800">
               Uma comunidade firmada na{" "}
               <span className="text-igreja-teal">Rocha</span> e movida pela
               Graça.
             </h2>
-            <p className="text-base md:text-lg text-slate-500 leading-relaxed italic border-l-2 border-slate-100 pl-6">
+            <p className="text-base xl:text-base 2xl:text-lg text-slate-500 leading-relaxed italic border-l-2 border-slate-100 pl-6">
               "Convidamos você a mergulhar em nossa trajetória, compreender
               nossos pilares de fé e descobrir como sua vida pode florescer em
               comunhão conosco."
@@ -145,9 +145,9 @@ export default function SectionChurch() {
       </div>
 
       {/* 3. GRID DE HISTÓRIA / CARDS PRINCIPAIS */}
-      <div className="max-w-[1440px] mx-auto px-6 py-24">
+      <div className=" xl:max-w-5xl 2xl:max-w-8xl mx-auto px-6 py-24">
         {/* Grid Responsivo: 1 col (mobile), 2 col (tablet), 3 col (laptop), 4 col (desktop grande) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 lg:gap-8">
           {historyCards.map((item, index) => (
             <motion.div
               key={index}
@@ -213,7 +213,7 @@ export default function SectionChurch() {
 
       {/* 4. SEÇÃO DE DOUTRINA (PADRÕES DA FÉ) */}
       <div className="bg-slate-50 py-24">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="xl:max-w-5xl 2xl:max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-16 border-b border-slate-200 pb-12">
             <div className="max-w-2xl">
               <span className="text-igreja-teal font-bold tracking-[0.4em] uppercase text-[10px] md:text-xs mb-3 block">
