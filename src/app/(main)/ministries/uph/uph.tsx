@@ -256,13 +256,13 @@ export default function UPHContent() {
           variants={fadeIn}
         >
           <Quote className="mx-auto text-zinc-300 mb-8" size={60} />
-          <p className="xl:max-w-3xl 2xl:max-w-4xl mx-auto text-2xl xl:text-3xl 2xl:text-4xl font-serif italic text-zinc-700 mb-16 leading-tight">
+          <p className="xl:max-w-3xl 2xl:max-w-4xl mx-auto text-2xl xl:text-2xl 2xl:text-4xl font-serif italic text-zinc-700 mb-16 leading-tight">
             "A UPH busca fortalecer a fé, a liderança e o testemunho dos homens,
             incentivando-os a serem ativos na igreja, na família e na
             sociedade." 🙏📖
           </p>
 
-          <div className="flex flex-col items-center gap-6 font-sans text-sm uppercase tracking-[0.5em] font-black text-black">
+          <div className="flex flex-col items-center gap-6 font-sans text-xs 2xl:text-sm uppercase tracking-[0.5em] font-black text-black">
             <div className="h-1 w-32 bg-black" />
             <span>Igreja Presbiteriana de Imbituba • Boletim UPH {new Date().getFullYear()}</span>
           </div>
