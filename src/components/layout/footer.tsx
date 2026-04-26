@@ -186,8 +186,6 @@ export default function FooterPage() {
                         </p>
                         <SocialButtons
                           className="justify-center  gap-4 md:gap-5 items-center"
-                          hoverColor="hover:text-igreja-dourado"
-                          size={30} /* Ícones sociais menores no mobile */
                         />
                       </div>
                     </div>

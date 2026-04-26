@@ -161,8 +161,6 @@ export default function PageContacts() {
             </p>
             <SocialButtons
               className="justify-center md:justify-start gap-5"
-              hoverColor="hover:text-igreja-dourado"
-              size={24}
             />
           </div>
         </motion.div>
