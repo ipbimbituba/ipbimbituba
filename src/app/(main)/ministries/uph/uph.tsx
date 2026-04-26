@@ -31,7 +31,7 @@ export default function UPHContent() {
       {/* 1. BANNER PRINCIPAL */}
       <HeroSection title="União Presbiteriana de Homens" image={photoUPH} />
 
-      <article className="max-w-7xl mx-auto px-4 md:px-10 pb-40 pt-16">
+      <article className="xl:max-w-5xl 2xl:max-w-7xl mx-auto px-4 md:px-10 pb-40 pt-16">
         {/* 2. CABEÇALHO DO BOLETIM INFORMATIVO */}
         <motion.header
           className="border-b-4 border-black pb-10 mb-16"
@@ -46,7 +46,7 @@ export default function UPHContent() {
             <span className="order-2 md:order-1">Imbituba - SC</span>
 
             {/* Título Central - Ganha destaque no mobile */}
-            <span className="font-black text-base md:text-lg order-1 md:order-2 border-b-2 border-black md:border-0 pb-2 md:pb-0 w-full md:w-auto">
+            <span className="font-black text-sm xl:text-base 2xl:text-lg order-1 md:order-2 border-b-2 border-black md:border-0 pb-2 md:pb-0 w-full md:w-auto">
               Boletim Ano 2026
             </span>
 
@@ -68,10 +68,10 @@ export default function UPHContent() {
             </div>
 
             <div className="md:col-span-9 text-center md:text-right space-y-4">
-              <span className="text-zinc-600 font-sans font-black tracking-[0.3em] uppercase text-base block">
+              <span className="text-zinc-600 font-sans font-black tracking-[0.3em] uppercase xl:text-xs 2xl:text-base block">
                 Sociedade Interna Masculina
               </span>
-              <h1 className="text-7xl md:text-[9rem] font-sans font-black tracking-tighter leading-[0.8] text-black uppercase">
+              <h1 className="text-7xl xl:text-8xl 2xl:text-[9rem] font-sans font-black tracking-tighter leading-[0.8] text-black uppercase">
                 União de <br />{" "}
                 <span className="font-light italic font-serif text-black tracking-normal">
                   Homens
@@ -94,10 +94,10 @@ export default function UPHContent() {
           >
             <div className="border-b-2 border-black pb-8">
               <Newspaper className="text-zinc-400 mb-4" size={32} />
-              <h3 className="font-sans font-black uppercase text-4xl tracking-tighter text-black mb-4 uppercase">
+              <h3 className="font-sans font-black uppercase xl:text-2xl 2xl:text-4xl tracking-tighter text-black mb-4 uppercase">
                 Identidade
               </h3>
-              <p className="text-xl leading-relaxed text-justify">
+              <p className="xl:text-base 2xl:text-xl leading-relaxed text-justify">
                 A UPH é o braço masculino da IPB, focada em organizar e treinar
                 homens para o serviço fiel no Reino de Deus.
               </p>
@@ -108,13 +108,13 @@ export default function UPHContent() {
               <h4 className="font-sans font-black uppercase text-sm mb-4 tracking-widest text-black">
                 O Moto da UPH
               </h4>
-              <p className="font-serif italic text-2xl text-zinc-700 leading-tight">
+              <p className="font-serif italic xl:text-base 2xl:text-2xl text-zinc-700 leading-tight">
                 "Confiança em Jesus, Entusiasmo no Trabalho e União entre os
                 Irmãos."
               </p>
             </div>
 
-            <div className="text-center italic text-zinc-500 border-t border-zinc-200 pt-8 text-lg">
+            <div className="text-center italic text-zinc-500 border-t border-zinc-200 pt-8 xl:text-base 2xl:text-lg">
               Lema: "O homem crente, fervoroso no espírito e servindo ao
               Senhor."
             </div>
@@ -130,20 +130,20 @@ export default function UPHContent() {
             variants={fadeInUp}
           >
             <div className="text-center">
-              <h2 className="text-6xl font-sans font-black text-black uppercase tracking-tighter leading-none mb-4 uppercase">
+              <h2 className="xl:text-5xl 2xl:text-6xl font-sans font-black text-black uppercase tracking-tighter leading-none mb-4 uppercase">
                 SEJA BEM-VINDO
               </h2>
-              <p className="text-3xl font-serif text-zinc-700 max-w-xl mx-auto italic">
+              <p className="xl:text-lg 2xl:text-3xl font-serif text-zinc-700 max-w-xl mx-auto italic">
                 À Força de Integração Masculina da IPB Imbituba
               </p>
               <div className="h-1 w-40 bg-black mx-auto mt-8" />
             </div>
 
             <div className="md:columns-2 gap-10 space-y-8 text-lg leading-relaxed text-zinc-900 text-justify">
-              <h3 className="text-3xl font-bold text-black border-b-2 border-black pb-2 mb-6 break-inside-avoid uppercase">
+              <h3 className="xl:text-lg 2xl:text-3xl font-bold text-black border-b-2 border-black pb-2 mb-6 break-inside-avoid uppercase">
                 O que é UPH?
               </h3>
-              <p className="first-letter:text-7xl first-letter:font-black first-letter:text-black first-letter:float-left first-letter:mr-4 first-letter:leading-none">
+              <p className="first-letter:xl:text-6xl 2xl:text-7xl first-letter:font-black first-letter:text-black first-letter:float-left first-letter:mr-4 first-letter:leading-none xl:text-base 2xl:text-lg">
                 <strong>A União Presbiteriana de Homens (UPH)</strong> é uma das
                 sociedades internas da{" "}
                 <strong>Igreja Presbiteriana do Brasil (IPB)</strong>, com o
@@ -161,23 +161,23 @@ export default function UPHContent() {
                 Congresso Nacional dos Homens Presbiterianos.
               </p>
 
-              <h3 className="text-3xl font-bold text-black border-b-2 border-black pb-2 mt-12 mb-6 break-inside-avoid uppercase">
+              <h3 className="xl:text-2xl 2xl:text-3xl font-bold text-black border-b-2 border-black pb-2 mt-12 mb-6 break-inside-avoid uppercase">
                 Estrutura
               </h3>
-              <p className="text-2xl">A organização se divide em esferas de atuação:</p>
+              <p className="xl:text-base 2xl:text-lg">A organização se divide em esferas de atuação:</p>
               <ul className="list-none space-y-4 text-base italic text-zinc-800 ">
-                <li className="border-l-4 border-[#bf9b30] pl-4 text-lg">
+                <li className="border-l-4 border-[#bf9b30] pl-4 xl:text-base 2xl:text-lg">
                   <strong>Local:</strong> Força de integração na IPB Imbituba
                   para estudo e serviço.
                 </li>
-                <li className="border-l-4 border-zinc-300 pl-4 text-lg">
+                <li className="border-l-4 border-zinc-300 pl-4 xl:text-base 2xl:text-lg">
                   <strong>Presbiterial:</strong> Federações regionais de homens.
                 </li>
-                <li className="border-l-4 border-zinc-300 pl-4 text-lg">
+                <li className="border-l-4 border-zinc-300 pl-4 xl:text-base 2xl:text-lg">
                   <strong>Sinodal:</strong> Coordenação em nível
                   estadual/sinodal.
                 </li>
-                <li className="border-l-4 border-zinc-300 pl-4 text-lg">
+                <li className="border-l-4 border-zinc-300 pl-4 xl:text-base 2xl:text-lg">
                   <strong>Nacional:</strong> A Confederação Nacional (CNHP) como
                   entidade máxima.
                 </li>
@@ -196,10 +196,10 @@ export default function UPHContent() {
           >
             <div className="bg-zinc-900 text-white p-8 rounded-sm shadow-xl">
               <Flame className="text-[#bf9b30] mb-4" size={32} />
-              <h4 className="font-sans font-black uppercase text-xl mb-4 tracking-widest text-white">
+              <h4 className="font-sans font-black uppercase xl:text-lg 2xl:text-xl mb-4 tracking-widest text-white">
                 Palavra Bíblica
               </h4>
-              <p className="font-serif text-base leading-relaxed italic opacity-90 text-lg">
+              <p className="font-serif text-base leading-relaxed italic opacity-90 xl:text-base 2xl:text-lg">
                 "Homens, sede vigilantes, permanecei firmes na fé, portai-vos
                 varonilmente, fortalecei-vos. Todos os vossos atos sejam feitos
                 com amor." <br /> (1 Coríntios 16:13-14)
@@ -209,7 +209,7 @@ export default function UPHContent() {
             {/* DIRETORIA COM FOTOS PEQUENAS */}
             <div className="border-t-4 border-black pt-8">
               <Users className="text-black mb-4" size={32} />
-              <h3 className="font-sans font-black uppercase text-2xl tracking-tighter text-black mb-8 uppercase">
+              <h3 className="font-sans font-black uppercase xl:text-lg 2xl:text-2xl tracking-tighter text-black mb-8 uppercase">
                 Diretoria Atual
               </h3>
 
@@ -256,7 +256,7 @@ export default function UPHContent() {
           variants={fadeIn}
         >
           <Quote className="mx-auto text-zinc-300 mb-8" size={60} />
-          <p className="max-w-4xl mx-auto text-3xl md:text-4xl font-serif italic text-zinc-700 mb-16 leading-tight">
+          <p className="xl:max-w-3xl 2xl:max-w-4xl mx-auto text-2xl xl:text-3xl 2xl:text-4xl font-serif italic text-zinc-700 mb-16 leading-tight">
             "A UPH busca fortalecer a fé, a liderança e o testemunho dos homens,
             incentivando-os a serem ativos na igreja, na família e na
             sociedade." 🙏📖
