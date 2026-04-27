@@ -68,7 +68,7 @@ export default function SectionVideo() {
             sm:text-3xl         /* Tablet */
             md:text-4xl         /* Laptop */
             lg:text-5xl         /* Desktop */
-            font-black uppercase leading-tight max-w-5xl shadow-2xl tracking-tighter"
+            font-black uppercase leading-tight xl:max-w-4xl 2xl:max-w-5xl shadow-2xl tracking-tighter"
         >
           Compareça ao próximo <br className="hidden sm:block" /> evento da igreja.
         </motion.h2>
@@ -85,8 +85,9 @@ export default function SectionVideo() {
           }}
           className="
             text-base           /* Mobile */
-            sm:text-sm          /* Tablet */
-            md:text-2xl         /* Laptop */
+            sm:text-sm
+            xl:text-xl          /* Tablet */
+            2xl:text-2xl         /* Laptop */
             lg:text-3xl         /* Desktop */
             font-medium md:font-black 
             pt-4 sm:pt-6 md:pt-10 

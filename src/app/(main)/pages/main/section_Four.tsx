@@ -7,14 +7,14 @@ export default function SectionLocation() {
 
   return (
     <section className="bg-white py-20 md:py-32 px-6 flex justify-center overflow-hidden">
-      <div className="max-w-6xl w-full">
+      <div className="xl:max-w-5xl 2xl:max-w-6xl w-full">
         
         {/* Cabeçalho */}
         <div className="mb-16">
           <h2 className="text-igreja-dourado font-bold uppercase tracking-[0.3em] text-[10px] mb-4">
             Onde nos encontrar
           </h2>
-          <h1 className="font-ibarra text-4xl md:text-6xl font-bold text-igreja-teal leading-tight">
+          <h1 className="font-ibarra text-3xl xl:text-4xl 2xl:text-6xl font-bold text-igreja-teal leading-tight">
             Igreja Presbiteriana <br /> de Imbituba
           </h1>
         </div>
@@ -36,7 +36,7 @@ export default function SectionLocation() {
               <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">
                 Nossos Cultos
               </h4>
-              <p className="font-ibarra text-2xl text-slate-700">
+              <p className="font-ibarra  xl:text-xl 2xl:text-2xl text-slate-700">
                 Todo Domingo às <span className="text-igreja-teal font-bold">19:30h</span> e <span className="text-igreja-teal font-bold">21:00h</span>
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function SectionLocation() {
                 <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">
                   Endereço
                 </h4>
-                <p className="font-ibarra text-xl text-slate-600">
+                <p className="font-ibarra xl:text-xl 2xl:text-2xl text-slate-600">
                   Av. Vinte Um de Junho, s/n — Centro <br />
                   Imbituba, SC
                 </p>

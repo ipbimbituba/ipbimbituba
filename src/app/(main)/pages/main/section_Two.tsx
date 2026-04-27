@@ -50,7 +50,7 @@ export default function SectionTwo() {
     <section className="bg-mauve-50 py-20 px-4 flex justify-center overflow-hidden">
       {/* Container com largura máxima controlada e gap generoso */}
 
-      <div className="max-w-7xl  w-full grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-4xl xl:max-w-5xl 2xl:max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-12">
         {items.map((item, index) => (
           <motion.div
             key={index}
@@ -80,7 +80,7 @@ export default function SectionTwo() {
             </span>
 
             {/* 3. Título - Alinhado à esquerda, elegante */}
-            <h3 className="text-2xl  lg:text-4xl   text-igreja-teal mb-4 group-hover:text-igreja-dourado transition-colors">
+            <h3 className="text-2xl  xl:text-3xl 2xl:text-4xl   text-igreja-teal mb-4 group-hover:text-igreja-dourado transition-colors">
               {item.title}
             </h3>
 

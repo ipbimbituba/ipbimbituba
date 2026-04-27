@@ -8,7 +8,7 @@ export default function SectionOne() {
   
   return (
     <section className="bg-gray-50 py-20 md:py-32 px-5 flex justify-center text-black overflow-hidden">
-      <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-4xl w-full gap-6">
+      <div className="flex flex-col items-center md:items-start text-center md:text-left xl:max-w-3xl 2xl:max-w-4xl w-full gap-6">
         {/* 1. Esquerda para Direita */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
@@ -17,7 +17,7 @@ export default function SectionOne() {
         
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-igreja-dourado xl:text-sm 2xl:text-lg font-bold uppercase tracking-widest text-base md:text-lg">
+          <h2 className="text-igreja-dourado xl:text-sm 2xl:text-lg font-bold uppercase tracking-widest text-base ">
             Bem-vindo à Igreja Presbiteriana de Imbituba
           </h2>
         </motion.div>
@@ -30,7 +30,7 @@ export default function SectionOne() {
          
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-6xl font-black text-igreja-teal leading-tight">
+          <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-black text-igreja-teal leading-tight">
             Nossa Missão
           </h1>
         </motion.div>
@@ -42,7 +42,7 @@ export default function SectionOne() {
           viewport={{ once: true }}      
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
-          <p className="text-gray-600 leading-relaxed text-lg xl:text-lg md:text-xl max-w-4xl text-justify">
+          <p className="text-gray-600 leading-relaxed text-lg xl:text-base md:text-xl xl:max-w-3xl 2xl:max-w-4xl text-justify">
             Existimos para ajudar as pessoas a encontrarem o caminho de volta
             para Deus através do evangelho genuíno. Alcançamos aqueles que estão
             distantes, restauramos o sonho de Deus para o mundo e reproduzimos
@@ -62,7 +62,7 @@ export default function SectionOne() {
           <div className="pt-4 flex justify-center md:justify-start">
             <Button
               asChild
-              className="bg-igreja-dourado hover:bg-igreja-dourado-dark rounded-none text-white w-full md:w-60 h-16 md:h-18 xl:h-15 text-lg  cursor-pointer transition-all"
+              className="bg-igreja-dourado hover:bg-igreja-dourado-dark rounded-none text-white w-full md:w-60 h-16 md:h-18 xl:h-15 xl:text-base 2xl:text-lg  cursor-pointer transition-all"
             >
               <a
                 href="/church/hystoryIPB_Imbituba"
