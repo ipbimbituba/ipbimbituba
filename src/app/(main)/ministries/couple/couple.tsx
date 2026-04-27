@@ -210,14 +210,14 @@ export default function CouplePage() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1 , delay: 0.2} }
-            className="text-3xl md:text-[9rem] font-black text-white leading-[0.8] tracking-tighter uppercase italic drop-shadow-2xl"
+            className="text-3xl xl:text-7xl 2xl:text-[9rem] font-black text-white leading-[0.8] tracking-tighter uppercase italic drop-shadow-2xl"
             viewport={{ once: true }}
           >
             Ministério de Casais.
           </motion.h1>
           <div className="mt-8 flex items-center gap-4">
             <div className="h-[2px] w-12 bg-[#bf9b30]" />
-            <span className="text-white font-serif italic text-sm md:text-2xl">
+            <span className="text-white font-serif italic text-sm xl:text-xl 2xl:text-2xl">
               Igreja Presbiteriana de Imbituba
             </span>
             <div className="h-[2px] w-12 bg-[#bf9b30]" />
