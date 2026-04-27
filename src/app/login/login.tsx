@@ -27,14 +27,14 @@ export default function Login() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative z-10 w-full max-w-md py-12 max-w-sm xl"
+        className="relative z-10 w-full xl:max-w-xs 2xl:max-w-md py-12 max-w-sm xl"
       >
         {/* 1. TÍTULO */}
         <div className="text-center mb-16">
           <span className="text-igreja-dourado font-bold uppercase tracking-[0.4em] xl:text-[8px] 2xl:text-[10px] mb-3 block">
             Área Restrita
           </span>
-          <h2 className="text-4xl xl:text-4xl 2xl:text-6xl font-serif text-white tracking-tighter italic">
+          <h2 className="text-4xl xl:text-4xl 2xl:text-5xl font-serif text-white tracking-tighter italic">
             Portal do{" "}
             <span className="text-white not-italic font-black block md:inline underline decoration-igreja-dourado decoration-4 underline-offset-8">
               Membro
