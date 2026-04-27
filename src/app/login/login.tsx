@@ -34,7 +34,7 @@ export default function Login() {
           <span className="text-igreja-dourado font-bold uppercase tracking-[0.4em] text-[10px] xl:text-[10px] mb-3 block">
             Área Restrita
           </span>
-          <h2 className="text-5xl md:text-6xl xl:text-5xl font-serif text-white tracking-tighter italic">
+          <h2 className="text-5xl xl:text-5xl 2xl:text-6xl font-serif text-white tracking-tighter italic">
             Portal do{" "}
             <span className="text-white not-italic font-black block md:inline underline decoration-igreja-dourado decoration-4 underline-offset-8">
               Membro
@@ -43,7 +43,7 @@ export default function Login() {
         </div>
 
         {/* 2. FORMULÁRIO COM INPUTS EM ESTILO 'BOX' (Estilo Forven) */}
-        <form onSubmit={handleLogin} className="space-y-5 md:space-y-8 ">
+        <form onSubmit={handleLogin} className="space-y-5 xl:space-y-6 2xl:space-y-8 ">
           
           {/* Campo E-mail em Caixa */}
           <div className="space-y-2">
@@ -57,7 +57,7 @@ export default function Login() {
                     required
                     placeholder="seu.nome@ipb.org.br"
                     // bg-transparent para usar o fundo da div pai. text-lg e py-5 para conforto.
-                    className="w-full bg-transparent py-4 xl:py-4 pl-14 pr-4 text-white placeholder:text-white/20 outline-none text-lg font-light"
+                    className="w-full bg-transparent py-4 xl:py-4 pl-14 pr-4 text-white placeholder:text-white/20 outline-none xl:text-base 2xl:text-lg font-light"
                 />
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Login() {
                     type={showPassword ? "text" : "password"}
                     required
                     placeholder="••••••••"
-                    className="w-full bg-transparent py-4 xl:py-4 pl-14 pr-14 text-white placeholder:text-white/20 outline-none text-lg font-light"
+                    className="w-full bg-transparent py-4 xl:py-4 pl-14 pr-14 text-white placeholder:text-white/20 outline-none xl:text-base 2xl:text-lg font-light"
                 />
                 <button
                     type="button"
@@ -96,7 +96,7 @@ export default function Login() {
           <div className="flex flex-col gap-6 pt-10 xl:pt-4">
             <button
               type="submit"
-              className="cursor-pointer w-full bg-igreja-teal text-white py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-igreja-teal-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-3 active:scale-95 active:translate-y-0"
+              className="cursor-pointer w-full bg-igreja-teal text-white py-5 rounded-full font-black uppercase tracking-widest xl:text-[10px] 2xl:text-xs shadow-2xl hover:bg-igreja-teal-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-3 active:scale-95 active:translate-y-0"
             >
               Acessar Painel Restrito
               <ArrowRight size={16} />
