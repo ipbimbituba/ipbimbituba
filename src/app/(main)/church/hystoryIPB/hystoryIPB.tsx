@@ -22,7 +22,7 @@ export default function HystoryIPB() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h1 className="text-4xl md:text-6xl font-black text-igreja-teal mb-6 leading-tight">
+            <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-black text-igreja-teal mb-6 leading-tight">
               Breve História da <br />
               <span className="text-igreja-dourado-dark">
                 Igreja Presbiteriana do Brasil
@@ -41,7 +41,7 @@ export default function HystoryIPB() {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <p className="text-xl md:text-2xl first-letter:text-7xl first-letter:font-black first-letter:mr-4 first-letter:float-left first-letter:text-igreja-teal text-justify font-serif">
+            <p className="text-base  2xl:text-2xl first-letter:xl:text-6xl 2xl:text-7xl first-letter:font-black first-letter:mr-4 first-letter:float-left first-letter:text-igreja-teal text-justify font-serif">
               A Igreja Presbiteriana do Brasil (IPB) tem uma história rica e
               significativa que remonta ao século XIX. Seu surgimento está
               intrinsecamente ligado ao trabalho missionário de Ashbel Green
@@ -58,7 +58,7 @@ export default function HystoryIPB() {
             viewport={{ once: true }}
             className="bg-white p-10 rounded-2xl shadow-xl border-l-8 border-igreja-dourado my-16 italic"
           >
-            <p className="text-2xl md:text-3xl font-serif text-gray-700 leading-snug">
+            <p className="text-2xl 2xl:text-3xl font-serif text-gray-700 leading-snug">
               "Simonton, juntamente com o Rev. José Manoel da Conceição, o
               primeiro pastor evangélico brasileiro, foram as figuras mais
               notáveis dos primórdios."
@@ -70,7 +70,7 @@ export default function HystoryIPB() {
             transition={{ duration: 0.3, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg md:text-xl text-justify">
+            <p className="text-base 2xl:text-xl text-justify">
               O Rev. Simonton enfrentou desafios significativos ao estabelecer a
               primeira igreja presbiteriana no Rio de Janeiro. Ele pregou seu
               primeiro sermão em português em 1860 e fundou a Primeira Igreja
@@ -93,10 +93,10 @@ export default function HystoryIPB() {
               className="bg-igreja-teal text-white p-8 rounded-3xl shadow-lg flex flex-col justify-between"
             >
               <div>
-                <h3 className="font-black text-2xl mb-4 uppercase tracking-widest border-b border-white/20 pb-2">
+                <h3 className="font-black xl:text-xl 2xl:text-2xl mb-4 uppercase tracking-widest border-b border-white/20 pb-2">
                   Expansão
                 </h3>
-                <p className="text-lg opacity-90 leading-relaxed">
+                <p className="xl:text-base 2xl:text-lg opacity-90 leading-relaxed">
                   A IPB cresceu rapidamente, estabelecendo igrejas em várias
                   cidades do Brasil, tornando-se uma federação que compartilha
                   teologia e governo comuns.
@@ -113,10 +113,10 @@ export default function HystoryIPB() {
               className="bg-zinc-100 p-8 rounded-3xl border border-zinc-200 shadow-lg flex flex-col justify-between"
             >
               <div>
-                <h3 className="font-black text-2xl text-igreja-teal mb-4 uppercase tracking-widest border-b border-zinc-300 pb-2">
+                <h3 className="font-black xl:text-xl 2xl:text-2xl text-igreja-teal mb-4 uppercase tracking-widest border-b border-zinc-300 pb-2">
                   Doutrina
                 </h3>
-                <p className="text-lg text-zinc-600 leading-relaxed">
+                <p className="xl:text-base 2xl:text-lg text-zinc-600 leading-relaxed">
                   Fundamentada na Confissão de Fé de Westminster, focando na
                   soberania de Deus e na autoridade das Escrituras.
                 </p>
@@ -130,7 +130,7 @@ export default function HystoryIPB() {
             transition={{ duration: 0.3, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg md:text-xl text-justify">
+            <p className="xl:text-base 2xl:text-xl text-justify">
               A base doutrinária da IPB está fundamentada na Confissão de Fé de
               Westminster. Essa confissão sintetiza as principais crenças,
               incluindo a soberania de Deus, a salvação pela graça e a
@@ -153,13 +153,13 @@ export default function HystoryIPB() {
                 <h4 className="text-igreja-dourado font-bold uppercase tracking-widest text-sm">
                   Legado Continuado
                 </h4>
-                <p className="text-xl md:text-3xl font-light leading-relaxed">
+                <p className="xl:text-base 2xl:text-3xl font-light leading-relaxed">
                   "A IPB tem desempenhado um papel vital na vida religiosa e
                   social do Brasil, promovendo a fé reformada, a educação e a
                   ação social."
                 </p>
-                <div className="flex justify-center gap-4 text-3xl">
-                  <Image src={logoIPB} alt="Logo IPB" width={60} />
+                <div className="flex justify-center gap-4 xl:text-xl 2xl:text-3xl">
+                  <Image src={logoIPB} alt="Logo IPB" width={50} />
                 </div>
               </div>
             </footer>

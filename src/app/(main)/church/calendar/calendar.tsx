@@ -72,7 +72,7 @@ export default function ContentCalendar() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-gray-50 z-10 pointer-events-none" />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 mt-16 md:mt-24">
+      <div className="xl:max-w-5xl 2xl:max-w-7xl mx-auto px-6 mt-16 md:mt-24">
         {/* Cabeçalho da Agenda */}
         <div className="flex flex-col mb-12 border-b border-gray-200 pb-8 gap-4 ">
           <div className="flex flex-col md:flex-row justify-between  md:items-end ">
@@ -80,7 +80,7 @@ export default function ContentCalendar() {
               <span className="text-igreja-teal font-bold tracking-[0.3em] uppercase text-sm mb-2 block">
                 Programação Mensal
               </span>
-              <h1 className="text-5xl md:text-7xl font-serif italic text-slate-800">
+              <h1 className="text-5xl xl:text-6xl 2xl:text-7xl font-serif italic text-slate-800">
                 {currentMonthData?.month}
               </h1>
             </div>
@@ -177,7 +177,7 @@ export default function ContentCalendar() {
               >
                 {/* O DIA - Elemento 3D Minimalista */}
                 <div className="flex-shrink-0 flex md:flex-col items-center justify-center bg-igreja-teal text-white w-20 h-20 md:w-24 md:h-24 rounded-2xl shadow-[0_6px_0_0_#064e4e] group-hover:translate-y-[-2px] group-hover:shadow-[0_8px_0_0_#064e4e] transition-all">
-                  <span className="text-3xl md:text-4xl font-black">
+                  <span className="xl:text-3xl 2xl:text-4xl font-black">
                     {activity.day}
                   </span>
                   <span className="text-[10px] uppercase tracking-widest font-bold opacity-80">
@@ -213,7 +213,7 @@ export default function ContentCalendar() {
                     </div>
                   </div>
 
-                  <p className="text-slate-500 leading-relaxed text-sm md:text-xl italic">
+                  <p className="text-slate-500 leading-relaxed text-sm xl:text-base 2xl:text-xl italic">
                     {activity.description}
                   </p>
 
