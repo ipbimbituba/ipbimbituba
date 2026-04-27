@@ -453,7 +453,7 @@ export default function CouplePage() {
         </div>
 
         {/* RODAPÉ ARTÍSTICO COM CITAÇÃO */}
-        <footer className="mt-60 pt-40 border-t border-zinc-100 text-center">
+        <footer className="mt-10 pt-40 border-t border-zinc-100 text-center">
           <motion.div
             className="xl:max-w-3xl 2xl:max-w-4xl mx-auto space-y-12"
             initial="hidden"
