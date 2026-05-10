@@ -67,7 +67,7 @@
           const data = await response.json();
           // Filtra para garantir que pegamos apenas imagens/carrosséis e limita a 6
           const onlyImages =
-            data.data?.filter((photo: { media_type: string }) => photo.media_type !== "VIDEO").slice(0, 6) || [];
+            data.data?.filter((photo: { media_type: string }) => photo.media_type !== "VIDEO").slice(0, 12) || [];
           setPosts(onlyImages);
         } catch (err) {
           console.error("Erro ao carregar Instagram:", err);
