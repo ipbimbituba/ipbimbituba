@@ -35,12 +35,12 @@ export default function SocialButtons({ className = "", iconClassName }: SocialP
       </a>
 
       {/* Linkedin */}
-      <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" title="Ir para Pagina do Linkedin">
+      {/* <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" title="Ir para Pagina do Linkedin">
         <FaLinkedin 
          
           className={`text-gray-600 hover:text-igreja-dourado transition-all cursor-pointer hover:scale-110 ${iconSizeClasses}`}
         />
-      </a>
+      </a> */}
 
       {/* Youtube */}
       <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer" title="Ir para Pagina do Youtube">
