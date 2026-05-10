@@ -4,6 +4,7 @@ import SectionLocation from "./pages/main/section_Four";
 import SectionOne from "./pages/main/section_One";
 import SectionThree from "./pages/main/section_Three";
 import SectionTwo from "./pages/main/section_Two";
+import InstagramSectionMinimal from "./pages/main/sectionIntagram";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <SectionOne />
       <SectionTwo />
+      <InstagramSectionMinimal/>
       <SectionThree />
       <SectionLocation />
       <SectionVideo />
